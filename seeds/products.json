@@ -1,0 +1,164 @@
+[
+  {
+    "_id": "655000000000000000000011",
+    "name": "Classic Polo Shirt",
+    "slug": "classic-polo-shirt",
+    "description": "Premium cotton polo shirt with signature crocodile logo. Comfortable fit for everyday wear.",
+    "price": 3850,
+    "compareAtPrice": 4500,
+    "categoryId": "655000000000000000000001",
+    "images": [
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c"
+    ],
+    "variants": [
+      { "sku": "P1-S-W", "size": "S", "color": "White", "stock": 15, "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d" },
+      { "sku": "P1-M-W", "size": "M", "color": "White", "stock": 20, "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d" },
+      { "sku": "P1-L-W", "size": "L", "color": "White", "stock": 18, "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d" },
+      { "sku": "P1-S-B", "size": "S", "color": "Navy Blue", "stock": 12, "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c" },
+      { "sku": "P1-M-B", "size": "M", "color": "Navy Blue", "stock": 25, "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c" },
+      { "sku": "P1-L-B", "size": "L", "color": "Navy Blue", "stock": 22, "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c" }
+    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["White", "Navy Blue"],
+    "tags": ["polo", "casual", "cotton"],
+    "topSelling": true,
+    "salesCount": 245,
+    "featured": true,
+    "active": true,
+    "createdAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "_id": "655000000000000000000012",
+    "name": "Slim Fit Chino Pants",
+    "slug": "slim-fit-chino-pants",
+    "description": "Modern slim fit chino pants. Versatile and comfortable for any occasion.",
+    "price": 5200,
+    "compareAtPrice": 6000,
+    "categoryId": "655000000000000000000001",
+    "images": [
+      "https://images.unsplash.com/photo-1506629082955-511b1aa562c8",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a"
+    ],
+    "variants": [
+      { "sku": "P2-30-K", "size": "30", "color": "Khaki", "stock": 10, "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8" },
+      { "sku": "P2-32-K", "size": "32", "color": "Khaki", "stock": 15, "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8" },
+      { "sku": "P2-34-K", "size": "34", "color": "Khaki", "stock": 12, "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8" },
+      { "sku": "P2-30-N", "size": "30", "color": "Navy", "stock": 8, "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a" },
+      { "sku": "P2-32-N", "size": "32", "color": "Navy", "stock": 18, "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a" },
+      { "sku": "P2-34-N", "size": "34", "color": "Navy", "stock": 14, "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a" }
+    ],
+    "sizes": ["30", "32", "34"],
+    "colors": ["Khaki", "Navy"],
+    "tags": ["pants", "chino", "casual"],
+    "topSelling": true,
+    "salesCount": 198,
+    "featured": true,
+    "active": true,
+    "createdAt": "2024-01-16T10:00:00.000Z"
+  },
+  {
+    "_id": "655000000000000000000013",
+    "name": "Women's Floral Dress",
+    "slug": "womens-floral-dress",
+    "description": "Elegant floral pattern summer dress. Light and breathable fabric perfect for warm weather.",
+    "price": 6500,
+    "compareAtPrice": 7800,
+    "categoryId": "655000000000000000000002",
+    "images": [
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8"
+    ],
+    "variants": [
+      { "sku": "P3-S-F", "size": "S", "color": "Floral", "stock": 8, "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" },
+      { "sku": "P3-M-F", "size": "M", "color": "Floral", "stock": 12, "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" },
+      { "sku": "P3-L-F", "size": "L", "color": "Floral", "stock": 10, "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" }
+    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["Floral"],
+    "tags": ["dress", "summer", "elegant"],
+    "topSelling": true,
+    "salesCount": 176,
+    "featured": false,
+    "active": true,
+    "createdAt": "2024-01-17T10:00:00.000Z"
+  },
+  {
+    "_id": "655000000000000000000014",
+    "name": "Leather Crossbody Bag",
+    "slug": "leather-crossbody-bag",
+    "description": "Premium genuine leather crossbody bag with adjustable strap. Compact and stylish.",
+    "price": 8900,
+    "compareAtPrice": 10500,
+    "categoryId": "655000000000000000000003",
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7"
+    ],
+    "variants": [
+      { "sku": "P4-OS-BL", "size": "One Size", "color": "Black", "stock": 15, "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa" },
+      { "sku": "P4-OS-BR", "size": "One Size", "color": "Brown", "stock": 12, "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7" }
+    ],
+    "sizes": ["One Size"],
+    "colors": ["Black", "Brown"],
+    "tags": ["bag", "leather", "accessory"],
+    "topSelling": true,
+    "salesCount": 156,
+    "featured": true,
+    "active": true,
+    "createdAt": "2024-01-18T10:00:00.000Z"
+  },
+  {
+    "_id": "655000000000000000000015",
+    "name": "Classic Sneakers",
+    "slug": "classic-sneakers",
+    "description": "Timeless white sneakers with comfortable cushioning. Perfect for everyday wear.",
+    "price": 7200,
+    "compareAtPrice": 8500,
+    "categoryId": "655000000000000000000004",
+    "images": [
+      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+    ],
+    "variants": [
+      { "sku": "P5-40-W", "size": "40", "color": "White", "stock": 10, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" },
+      { "sku": "P5-41-W", "size": "41", "color": "White", "stock": 14, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" },
+      { "sku": "P5-42-W", "size": "42", "color": "White", "stock": 16, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" },
+      { "sku": "P5-43-W", "size": "43", "color": "White", "stock": 12, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" }
+    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["White"],
+    "tags": ["sneakers", "shoes", "casual"],
+    "topSelling": true,
+    "salesCount": 189,
+    "featured": true,
+    "active": true,
+    "createdAt": "2024-01-19T10:00:00.000Z"
+  },
+  {
+    "_id": "655000000000000000000016",
+    "name": "Cotton T-Shirt Pack",
+    "slug": "cotton-tshirt-pack",
+    "description": "Pack of 3 premium cotton t-shirts. Essential basics for your wardrobe.",
+    "price": 4200,
+    "compareAtPrice": 5400,
+    "categoryId": "655000000000000000000001",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a"
+    ],
+    "variants": [
+      { "sku": "P6-S-MIX", "size": "S", "color": "Mixed", "stock": 20, "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" },
+      { "sku": "P6-M-MIX", "size": "M", "color": "Mixed", "stock": 25, "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" },
+      { "sku": "P6-L-MIX", "size": "L", "color": "Mixed", "stock": 22, "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" }
+    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["Mixed"],
+    "tags": ["tshirt", "basics", "cotton"],
+    "topSelling": false,
+    "salesCount": 95,
+    "featured": false,
+    "active": true,
+    "createdAt": "2024-01-20T10:00:00.000Z"
+  }
+]
