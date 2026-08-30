@@ -112,19 +112,39 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-light py-12">
-      <div className="container">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            {t('contact.title')}
-          </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            {t('contact.subtitle')}
-          </p>
-          <div className="w-24 h-1 bg-zak-black mx-auto mt-6 rounded-full" />
-        </div>
+    <div className="min-h-screen bg-gray-light">
+      {/* Header Section */}
+      <div className="relative bg-[#0F0F0F] text-white py-16 lg:py-20 overflow-hidden mb-12">
+        {/* Subtle gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1A1613] to-[#2C2520] opacity-95" />
+        
+        {/* Decorative soft glow */}
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-white/3 blur-[100px] pointer-events-none" />
 
+        {/* Gold top rule */}
+        <div className="absolute top-0 inset-x-0 h-px bg-[#D4AF37]/40" />
+
+        <div className="container relative z-10 text-center">
+          <div className="max-w-3xl mx-auto flex flex-col items-center">
+            <p className="inline-flex items-center gap-3 mb-4">
+              <span className="h-px w-6 bg-[#D4AF37]/70" />
+              <span className="text-[10px] font-sans font-semibold uppercase tracking-[0.32em] text-[#D4AF37]/90">
+                Layachi Bedding
+              </span>
+              <span className="h-px w-6 bg-[#D4AF37]/70" />
+            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4 text-white">
+              {t('contact.title')}
+            </h1>
+            <p className="text-lg font-sans font-light tracking-wide text-white/70 max-w-xl mx-auto">
+              {t('contact.subtitle')}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Form - Takes 2 columns */}
           <div className="lg:col-span-2">

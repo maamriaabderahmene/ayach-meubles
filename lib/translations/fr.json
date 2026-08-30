@@ -33,7 +33,7 @@
   "footer.returnPolicy": "Politique de retour",
   "footer.shipping": "Livraison",
   "footer.faq": "FAQ",
-  "footer.brandDesc": "ZAK SHOP — Vêtements premium homme & femme, livraison rapide partout en Algérie",
+  "footer.brandDesc": "Layachi Bedding — Mobilier & Literie premium, livraison rapide partout en Algérie",
   "footer.returns": "Retours",
   "footer.terms": "Conditions",
   
@@ -41,17 +41,17 @@
   "language.french": "Français",
   "language.switchTo": "Passer à",
   
-  "hero.title": "Mode Premium",
-  "hero.subtitle": "Vêtements homme & femme haut de gamme, livraison rapide en Algérie",
+  "hero.title": "Literie Premium",
+  "hero.subtitle": "Mobilier & Literie haut de gamme, livraison rapide en Algérie",
   "hero.shopNow": "Acheter maintenant",
   "hero.allProducts": "Tous les produits",
-  "hero.overline": "Mode Premium pour Hommes & Femmes",
+  "hero.overline": "Literie Premium pour votre maison",
   
   "home.categoriesTitle": "Acheter par catégorie",
   "home.featuredTitle": "Produits en vedette",
   "home.ctaDesc": "Découvrez nos dernières nouveautés — qualité premium à prix compétitif.",
-  "home.aboutTitle": "À propos de ZAK SHOP",
-  "home.aboutDesc": "ZAK SHOP — La meilleure boutique de mode en Algérie. Nous proposons une sélection premium de vêtements homme et femme à prix compétitifs avec livraison rapide. Votre satisfaction est notre priorité.",
+  "home.aboutTitle": "À propos de Layachi Bedding",
+  "home.aboutDesc": "Layachi Bedding — La meilleure boutique de mobilier en Algérie. Nous proposons une sélection premium de literie et meubles à prix compétitifs avec livraison rapide. Votre satisfaction est notre priorité.",
   "home.statsProducts": "Produits",
   "home.statsCustomers": "Clients",
   "home.statsRating": "Note",
@@ -73,7 +73,7 @@
   "products.reviews": "Avis",
   "products.quantity": "Quantité",
   "products.colors": "Couleurs",
-  "products.sizes": "Tailles",
+  "products.sizes": "Dimensions",
   
   "categories.title": "Catégories",
   "categories.subtitle": "Explorez nos catégories",
@@ -133,7 +133,7 @@
   "checkout.failedToLoadWilayas": "Échec du chargement des wilayas",
   "checkout.calculating": "Calcul en cours...",
   "checkout.selectWilaya": "Sélectionnez la wilaya",
-  "checkout.size": "Taille",
+  "checkout.size": "Dimensions",
   "checkout.color": "Couleur",
   "checkout.qty": "Quantité",
   "checkout.form.name": "Nom complet",
@@ -201,6 +201,6 @@
   "bundle.noOffers": "Aucune offre bundle disponible",
   "bundle.loading": "Chargement des offres...",
   "bundle.badge": "Offres Bundle",
-  "bundle.selectVariants": "Veuillez sélectionner la taille et la couleur ci-dessus",
+  "bundle.selectVariants": "Veuillez sélectionner la dimension et la couleur ci-dessus",
   "bundle.bundleSelected": "Bundle sélectionné"
 }

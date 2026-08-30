@@ -41,7 +41,7 @@ export default function HomePage() {
           <p className="inline-flex items-center gap-3 mb-6">
             <span className="h-px w-8 bg-[#D4AF37]/70" />
             <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.32em] text-[#D4AF37]/90">
-              {locale === "ar" ? "أزياء فاخرة — الجزائر" : "Mode Premium — Algérie"}
+              {locale === "ar" ? "أفرشة فاخرة — الجزائر" : "Literie Premium — Algérie"}
             </span>
             <span className="h-px w-8 bg-[#D4AF37]/70" />
           </p>
@@ -135,21 +135,21 @@ export default function HomePage() {
           <div className="section-heading">
             <h2>{locale === "ar" ? "تسوق حسب الفئة" : "Parcourez nos collections"}</h2>
             <p className="text-stone-400 text-sm">
-              {locale === "ar" ? "اكتشف تشكيلتنا للرجال والنساء" : "Homme, Femme et accessoires — style garanti"}
+              {locale === "ar" ? "اكتشف تشكيلتنا لكل غرفة في بيتك" : "Salon, Chambre et plus — confort garanti"}
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             {/* Collection tile 1 */}
-            <Link href="/products?category=homme" className="collection-card group h-[380px] block">
+            <Link href="/products?category=salon" className="collection-card group h-[380px] block">
               <div className="absolute inset-0 bg-gradient-to-br from-stone-800 to-stone-900" />
               <div className="collection-card__overlay">
                 <div>
                   <p className="text-[10px] font-sans text-white/60 uppercase tracking-widest mb-1">
-                    {locale === "ar" ? "رجال" : "Homme"}
+                    {locale === "ar" ? "غرفة الجلوس" : "Salon"}
                   </p>
                   <h3 className="collection-card__title">
-                    {locale === "ar" ? "تشكيلة الرجال" : "Collection Homme"}
+                    {locale === "ar" ? "تشكيلة الصالون" : "Collection Salon"}
                   </h3>
                   <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#D4AF37] font-semibold">
                     {locale === "ar" ? "تسوق الآن" : "Découvrir"}
@@ -162,15 +162,15 @@ export default function HomePage() {
             </Link>
 
             {/* Collection tile 2 (tall) */}
-            <Link href="/products?category=femme" className="collection-card group h-[380px] sm:row-span-1 block">
+            <Link href="/products?category=chambre" className="collection-card group h-[380px] sm:row-span-1 block">
               <div className="absolute inset-0 bg-gradient-to-br from-stone-700 to-stone-900" />
               <div className="collection-card__overlay">
                 <div>
                   <p className="text-[10px] font-sans text-white/60 uppercase tracking-widest mb-1">
-                    {locale === "ar" ? "نساء" : "Femme"}
+                    {locale === "ar" ? "غرفة النوم" : "Chambre"}
                   </p>
                   <h3 className="collection-card__title">
-                    {locale === "ar" ? "تشكيلة النساء" : "Collection Femme"}
+                    {locale === "ar" ? "تشكيلة غرفة النوم" : "Collection Chambre"}
                   </h3>
                   <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#D4AF37] font-semibold">
                     {locale === "ar" ? "تسوق الآن" : "Découvrir"}
@@ -188,10 +188,10 @@ export default function HomePage() {
               <div className="collection-card__overlay">
                 <div>
                   <p className="text-[10px] font-sans text-white/60 uppercase tracking-widest mb-1">
-                    {locale === "ar" ? "إكسسوارات" : "Accessoires"}
+                    {locale === "ar" ? "إكسسوارات المنزل" : "Accessoires"}
                   </p>
                   <h3 className="collection-card__title">
-                    {locale === "ar" ? "الإكسسوارات" : "Accessoires & Lifestyle"}
+                    {locale === "ar" ? "إكسسوارات وديكور" : "Accessoires & Déco"}
                   </h3>
                   <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#D4AF37] font-semibold">
                     {locale === "ar" ? "تسوق الآن" : "Découvrir"}

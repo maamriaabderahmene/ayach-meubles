@@ -555,7 +555,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             {product.sizes.length > 0 && (
               <div className="mb-6">
                 <label className="block font-semibold mb-2">
-                  {locale === 'ar' ? 'المقاس:' : 'Taille:'}
+                  {locale === 'ar' ? 'المقاس:' : 'Dimension:'}
                 </label>
                 <div className="flex flex-wrap gap-2">
                   {product.sizes.map((size) => (

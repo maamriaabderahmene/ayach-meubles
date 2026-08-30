@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useI18n } from "@/lib/i18n";
 import { trackCustomEvent } from "@/components/MetaPixel";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,15 +32,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Announcement bar */}
-      <div className="announcement-bar" dir="ltr">
-        <span>
-          {locale === "ar"
-            ? "🚚 توصيل مجاني عبر الجزائر — استخدم كود: ZAKSHOP10"
-            : "🚚 Livraison offerte partout en Algérie — Code : ZAKSHOP10"}
-        </span>
-      </div>
-
       {/* Main header */}
       <header
         className={`sticky top-0 z-40 bg-white transition-shadow duration-300 ${
@@ -50,10 +42,10 @@ export default function Navbar() {
           <div className={`flex items-center h-[60px] md:h-[68px] ${locale === "ar" ? "flex-row-reverse" : ""}`}>
 
             {/* Logo */}
-            <Link href="/" className="shrink-0 flex items-center gap-2.5 hover:opacity-75 transition-opacity">
-              <span className="block w-[3px] h-6 bg-[#D4AF37]" />
-              <span className="font-sans text-xl md:text-2xl font-bold tracking-tight text-stone-900">
-                ZAK <span className="font-light text-stone-400">SHOP</span>
+            <Link href="/" className="shrink-0 flex items-center gap-3 hover:opacity-90 transition-opacity">
+              <Logo width={48} height={48} />
+              <span className="font-serif text-xl md:text-2xl font-bold tracking-tight text-stone-900 hidden sm:block">
+                LAYACHI <span className="font-sans font-light text-stone-500 text-[0.6em] ml-1 tracking-[0.2em] align-middle">BEDDING</span>
               </span>
             </Link>
 
@@ -120,7 +112,7 @@ export default function Navbar() {
           <div className={`absolute top-0 ${locale === "ar" ? "right-0" : "left-0"} h-full w-[280px] bg-white shadow-2xl flex flex-col`}>
             <div className="flex items-center justify-between px-5 h-[60px] border-b border-[#E2D9C8]">
               <span className="font-sans text-lg font-bold text-stone-900">
-                ZAK <span className="font-light text-stone-400">SHOP</span>
+                LAYACHI <span className="font-light text-stone-400">BEDDING</span>
               </span>
               <button className="icon-btn" onClick={() => setMobileMenuOpen(false)} aria-label="Fermer le menu">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

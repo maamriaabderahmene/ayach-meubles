@@ -339,7 +339,7 @@ export default function CheckoutPage() {
                       {item.productName || `${locale === 'ar' ? 'منتج' : 'Produit'} ${idx + 1}`}
                     </p>
                     <p className="text-sm text-gray-600 mt-1">
-                      {locale === 'ar' ? 'المقاس:' : 'Taille:'} <span className="font-medium">{item.size}</span>
+                      {locale === 'ar' ? 'المقاس:' : 'Dimension:'} <span className="font-medium">{item.size}</span>
                       {' • '}
                       {locale === 'ar' ? 'اللون:' : 'Couleur:'} <span className="font-medium">{item.color}</span>
                       {' • '}

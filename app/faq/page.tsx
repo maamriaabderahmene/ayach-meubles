@@ -16,9 +16,9 @@ const defaultFaqsAr: FAQItem[] = [
   { question: "كيف يمكنني تتبع طلبي؟", answer: "سنتصل بك عبر الهاتف لتأكيد الطلب وإعلامك بحالة الشحن. يمكنك أيضًا الاتصال بنا في أي وقت للاستفسار عن طلبك." },
   { question: "ما هي تكاليف الشحن؟", answer: "تختلف تكاليف الشحن حسب الولاية ونوع التوصيل (توصيل للمنزل أو استلام من المكتب). سيتم عرض التكلفة الدقيقة عند إتمام الطلب." },
   { question: "هل المنتجات أصلية؟", answer: "نعم، جميع منتجاتنا أصلية 100% ونضمن جودتها. نعمل مع موردين موثوقين لضمان حصولك على أفضل المنتجات." },
-  { question: "كيف يمكنني معرفة المقاس المناسب؟", answer: "يمكنك الاتصال بنا عبر واتساب أو الهاتف، وسنساعدك في اختيار المقاس المناسب بناءً على قياساتك." },
+  { question: "كيف يمكنني معرفة الأبعاد المناسبة؟", answer: "يمكنك الاتصال بنا عبر واتساب أو الهاتف، وسنساعدك في اختيار الأبعاد المناسبة بناءً على المساحة المتوفرة لديك." },
   { question: "هل تقدمون خصومات؟", answer: "نعم، نقدم عروض وخصومات موسمية. تابعنا على وسائل التواصل الاجتماعي للبقاء على اطلاع بأحدث العروض." },
-  { question: "كيف يمكنني التواصل مع خدمة العملاء؟", answer: "يمكنك التواصل معنا عبر صفحة الاتصال، أو عبر واتساب، أو عبر وسائل التواصل الاجتماعي. نحن متاحون للإجابة على استفساراتك." },
+  { question: "كيف يمكنني التواصل مع خدمة العملاء؟", answer: "يمكنك التواصل معنا عبر صفحة الاتصال، عبر البريد الإلكتروني contact@layachi-bedding.com، أو عبر واتساب. نحن متاحون للإجابة على استفساراتك." },
 ];
 
 const defaultFaqsFr: FAQItem[] = [
@@ -29,9 +29,9 @@ const defaultFaqsFr: FAQItem[] = [
   { question: "Comment puis-je suivre ma commande ?", answer: "Nous vous contacterons par téléphone pour confirmer la commande et vous informer de l'état de l'expédition. Vous pouvez également nous contacter à tout moment pour vous renseigner sur votre commande." },
   { question: "Quels sont les frais de livraison ?", answer: "Les frais de livraison varient selon la wilaya et le type de livraison (livraison à domicile ou retrait au bureau). Le coût exact sera affiché lors de la finalisation de la commande." },
   { question: "Les produits sont-ils authentiques ?", answer: "Oui, tous nos produits sont 100% authentiques et nous garantissons leur qualité. Nous travaillons avec des fournisseurs fiables pour vous assurer les meilleurs produits." },
-  { question: "Comment puis-je connaître la taille appropriée ?", answer: "Vous pouvez nous contacter via WhatsApp ou par téléphone, et nous vous aiderons à choisir la taille appropriée en fonction de vos mesures." },
+  { question: "Comment puis-je connaître les dimensions appropriées ?", answer: "Vous pouvez nous contacter via WhatsApp ou par téléphone, et nous vous aiderons à choisir les dimensions appropriées en fonction de votre espace." },
   { question: "Offrez-vous des réductions ?", answer: "Oui, nous proposons des offres et des réductions saisonnières. Suivez-nous sur les réseaux sociaux pour rester informé de nos dernières offres." },
-  { question: "Comment puis-je contacter le service client ?", answer: "Vous pouvez nous contacter via la page de contact, WhatsApp ou les réseaux sociaux. Nous sommes disponibles pour répondre à vos questions." },
+  { question: "Comment puis-je contacter le service client ?", answer: "Vous pouvez nous contacter via la page de contact, par e-mail à contact@layachi-bedding.com ou via WhatsApp. Nous sommes disponibles pour répondre à vos questions." },
 ];
 
 export default function FAQPage() {

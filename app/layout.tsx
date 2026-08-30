@@ -20,9 +20,9 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com";
-const SITE_NAME = "ZAK SHOP";
-const SITE_TAGLINE = "ملابس فاخرة | Mode Premium";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com";
+const SITE_NAME = "Layachi Bedding";
+const SITE_TAGLINE = "للأفرشة | Literie Premium";
 
 export const metadata: Metadata = {
   title: {
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "زاك شوب — أفضل وجهة لملابس الرجال والنساء ذات الجودة العالية بأسعار مناسبة. توصيل سريع لجميع ولايات الجزائر. ZAK SHOP — La meilleure destination mode en Algérie.",
+    "ياشي للأفرشة — أفضل وجهة للأفرشة والأثاث المنزلي بجودة عالية بأسعار مناسبة. توصيل سريع لجميع ولايات الجزائر. Layachi Bedding — La meilleure destination literie en Algérie.",
   keywords:
-    "zak shop, زاك شوب, ملابس جزائر, mode algérie, vêtements homme femme algérie, boutique en ligne algérie, livraison algérie, زاك-شوب-أوفيسيال, clothing algeria, fashion algeria, zak-shop-officiel",
-  authors: [{ name: "ZAK SHOP" }],
+    "layachi bedding, ياشي للأفرشة, أفرشة جزائر, literie algérie, meubles algérie, boutique en ligne algérie, livraison algérie, ياشي-بيدينج, bedding algeria, furniture algeria, layachi-bedding",
+  authors: [{ name: "Layachi Bedding" }],
   robots: {
     index: true,
     follow: true,
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} — ${SITE_TAGLINE}`,
     description:
-      "زاك شوب — متجر الأزياء الأول في الجزائر. ملابس عالية الجودة, توصيل سريع, أسعار تنافسية.",
+      "ياشي للأفرشة — متجر الأفرشة الأول في الجزائر. جودة عالية, توصيل سريع, أسعار تنافسية.",
     images: [
-      { url: "/og-image.jpg", width: 1200, height: 630, alt: "ZAK SHOP — Mode Premium Algérie" },
+      { url: "/og-image.jpg", width: 1200, height: 630, alt: "Layachi Bedding — Literie Premium Algérie" },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} | ${SITE_TAGLINE}`,
     description:
-      "زاك شوب — ملابس فاخرة, توصيل سريع لجميع ولايات الجزائر. Livraison rapide partout en Algérie.",
+      "ياشي للأفرشة — أفرشة فاخرة, توصيل سريع لجميع ولايات الجزائر. Livraison rapide partout en Algérie.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -108,7 +108,7 @@ export default function RootLayout({
       </head>
       <body>
         <I18nProvider initialLocale="ar" translations={translations}>
-          {/* Schema.org Structured Data — ZAK SHOP */}
+          {/* Schema.org Structured Data — Layachi Bedding */}
           <Script
             id="schema-org"
             type="application/ld+json"
@@ -117,13 +117,13 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@graph": [
                   {
-                    "@type": "ClothingStore",
-                    "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com"}/#store`,
-                    name: "ZAK SHOP",
-                    alternateName: "زاك شوب",
-                    url:  process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com",
-                    description: "متجر الأزياء الأول في الجزائر — ملابس رجال ونساء عالية الجودة بأسعار تنافسية. La meilleure boutique de mode en Algérie.",
-                    image: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com"}/og-image.jpg`,
+                    "@type": "FurnitureStore",
+                    "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com"}/#store`,
+                    name: "Layachi Bedding",
+                    alternateName: "ياشي للأفرشة",
+                    url:  process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com",
+                    description: "متجر الأفرشة الأول في الجزائر — أفرشة وأثاث عالي الجودة بأسعار تنافسية. La meilleure boutique de literie en Algérie.",
+                    image: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com"}/og-image.jpg`,
                     priceRange: "$$",
                     currenciesAccepted: "DZD",
                     paymentAccepted: "Cash, Livraison contre remboursement",
@@ -133,23 +133,18 @@ export default function RootLayout({
                       "@type": "AggregateRating",
                       ratingValue: "4.8",
                       reviewCount: "1240",
-                    },
-                    sameAs: [
-                      "https://www.instagram.com/zakshop_officiel",
-                      "https://www.facebook.com/zakshop.officiel",
-                      "https://www.tiktok.com/@zakshop_officiel",
-                    ],
+                    }
                   },
                   {
                     "@type": "WebSite",
-                    "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com"}/#website`,
-                    url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com",
-                    name: "ZAK SHOP",
+                    "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com"}/#website`,
+                    url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com",
+                    name: "Layachi Bedding",
                     potentialAction: {
                       "@type": "SearchAction",
                       target: {
                         "@type": "EntryPoint",
-                        urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.zak-shop-officiel.com"}/products?q={search_term_string}`,
+                        urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.layachi-bedding.com"}/products?q={search_term_string}`,
                       },
                       "query-input": "required name=search_term_string",
                     },

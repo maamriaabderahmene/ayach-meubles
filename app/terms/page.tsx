@@ -78,7 +78,7 @@ export default function TermsPage() {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold text-zak-black mb-4">1. قبول الشروط</h2>
                 <p className="text-gray-700">
-                  باستخدام موقع كروكو (CROCCO) للتسوق عبر الإنترنت، فإنك توافق على الالتزام بهذه الشروط والأحكام.
+                  باستخدام موقع لعياشي للأفرشة (Layachi Bedding) للتسوق عبر الإنترنت، فإنك توافق على الالتزام بهذه الشروط والأحكام.
                   إذا كنت لا توافق على أي من هذه الشروط، يرجى عدم استخدام الموقع أو خدماتنا.
                 </p>
               </div>
@@ -86,7 +86,7 @@ export default function TermsPage() {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold text-zak-black mb-4">2. المنتجات والخدمات</h2>
                 <ul className="space-y-3 text-gray-700 list-disc list-inside">
-                  <li>نحن نبيع منتجات أزياء إيطالية أصلية بنسبة 100%</li>
+                  <li>نحن نبيع منتجات أثاث وأفرشة أصلية بنسبة 100%</li>
                   <li>جميع المنتجات المعروضة على الموقع تخضع للتوفر</li>
                   <li>نحتفظ بالحق في تغيير الأسعار في أي وقت دون إشعار مسبق</li>
                   <li>الصور المعروضة هي لأغراض التوضيح فقط وقد تختلف عن المنتج الفعلي قليلاً</li>
@@ -119,7 +119,7 @@ export default function TermsPage() {
                 <ul className="space-y-2 text-gray-700 list-disc list-inside">
                   <li>فترة الإرجاع: 14 يوماً من تاريخ الاستلام</li>
                   <li>يجب أن يكون المنتج في حالته الأصلية مع جميع العلامات</li>
-                  <li>لا يمكن إرجاع الملابس الداخلية والجوارب لأسباب صحية</li>
+                  <li>لا يمكن إرجاع الوسائد والشراشف لأسباب صحية</li>
                   <li>المنتجات المخفضة غير قابلة للإرجاع</li>
                 </ul>
               </div>
@@ -143,7 +143,7 @@ export default function TermsPage() {
 
               <div className="bg-zak-black/10 rounded-lg p-6 border-r-4 border-zak-black">
                 <h3 className="font-bold text-lg text-zak-black mb-2">اتصل بنا</h3>
-                <p className="text-gray-700 mb-4">إذا كانت لديك أي أسئلة حول هذه الشروط والأحكام:</p>
+                <p className="text-gray-700 mb-4">إذا كانت لديك أي أسئلة حول هذه الشروط والأحكام، يرجى مراسلتنا على contact@layachi-bedding.com:</p>
                 <a href="/contact" className="btn btn-primary inline-block">اتصل بنا</a>
               </div>
             </>
@@ -152,15 +152,15 @@ export default function TermsPage() {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold text-zak-black mb-4">1. Acceptation des Termes</h2>
                 <p className="text-gray-700">
-                  En utilisant le site CROCCO, vous acceptez de vous conformer à ces termes et conditions.
-                  Si vous n&apos;acceptez pas ces termes, veuillez ne pas utiliser le site.
+                  En utilisant le site Layachi Bedding, vous acceptez de vous conformer à ces termes et conditions.
+                  Si vous n'acceptez pas ces termes, veuillez ne pas utiliser le site.
                 </p>
               </div>
 
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold text-zak-black mb-4">2. Produits et Services</h2>
                 <ul className="space-y-3 text-gray-700 list-disc list-inside">
-                  <li>Nous vendons des vêtements et accessoires de mode premium 100% authentiques</li>
+                  <li>Nous vendons des meubles et literie premium 100% authentiques</li>
                   <li>Tous les produits sont sous réserve de disponibilité</li>
                   <li>Nous nous réservons le droit de modifier les prix sans préavis</li>
                   <li>Les images sont à titre indicatif seulement</li>
@@ -192,7 +192,7 @@ export default function TermsPage() {
                 <ul className="space-y-2 text-gray-700 list-disc list-inside">
                   <li>Retour: 14 jours après réception</li>
                   <li>Produit en état d&apos;origine avec étiquettes</li>
-                  <li>Sous-vêtements et chaussettes non retournables</li>
+                  <li>Oreillers et draps non retournables</li>
                   <li>Produits soldés non retournables</li>
                 </ul>
               </div>
@@ -216,7 +216,7 @@ export default function TermsPage() {
 
               <div className="bg-zak-black/10 rounded-lg p-6 border-l-4 border-zak-black">
                 <h3 className="font-bold text-lg text-zak-black mb-2">Contactez-nous</h3>
-                <p className="text-gray-700 mb-4">Pour toute question concernant ces termes:</p>
+                <p className="text-gray-700 mb-4">Pour toute question concernant ces termes, contactez-nous à contact@layachi-bedding.com :</p>
                 <a href="/contact" className="btn btn-primary inline-block">Contactez-nous</a>
               </div>
             </>

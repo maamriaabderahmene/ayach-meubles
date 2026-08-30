@@ -1,56 +1,48 @@
 [
   {
     "_id": "655000000000000000000011",
-    "name": "Classic Polo Shirt",
-    "slug": "classic-polo-shirt",
-    "description": "Premium cotton polo shirt with signature crocodile logo. Comfortable fit for everyday wear.",
-    "price": 3850,
-    "compareAtPrice": 4500,
+    "name": "Canapé 3 Places",
+    "slug": "canape-3-places",
+    "description": "Canapé confortable et élégant pour votre salon. Design moderne et tissu premium.",
+    "price": 38500,
+    "compareAtPrice": 45000,
     "categoryId": "655000000000000000000001",
     "images": [
-      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d",
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c"
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e"
     ],
     "variants": [
-      { "sku": "P1-S-W", "size": "S", "color": "White", "stock": 15, "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d" },
-      { "sku": "P1-M-W", "size": "M", "color": "White", "stock": 20, "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d" },
-      { "sku": "P1-L-W", "size": "L", "color": "White", "stock": 18, "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d" },
-      { "sku": "P1-S-B", "size": "S", "color": "Navy Blue", "stock": 12, "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c" },
-      { "sku": "P1-M-B", "size": "M", "color": "Navy Blue", "stock": 25, "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c" },
-      { "sku": "P1-L-B", "size": "L", "color": "Navy Blue", "stock": 22, "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c" }
+      { "sku": "SOF-1-G", "size": "200x90", "color": "Gris", "stock": 5, "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc" },
+      { "sku": "SOF-1-B", "size": "200x90", "color": "Beige", "stock": 3, "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e" }
     ],
-    "sizes": ["S", "M", "L"],
-    "colors": ["White", "Navy Blue"],
-    "tags": ["polo", "casual", "cotton"],
+    "sizes": ["200x90"],
+    "colors": ["Gris", "Beige"],
+    "tags": ["canapé", "salon", "mobilier"],
     "topSelling": true,
-    "salesCount": 245,
+    "salesCount": 45,
     "featured": true,
     "active": true,
     "createdAt": "2024-01-15T10:00:00.000Z"
   },
   {
     "_id": "655000000000000000000012",
-    "name": "Slim Fit Chino Pants",
-    "slug": "slim-fit-chino-pants",
-    "description": "Modern slim fit chino pants. Versatile and comfortable for any occasion.",
-    "price": 5200,
-    "compareAtPrice": 6000,
-    "categoryId": "655000000000000000000001",
+    "name": "Matelas Orthopédique",
+    "slug": "matelas-orthopedique",
+    "description": "Matelas orthopédique de haute qualité pour un sommeil réparateur.",
+    "price": 52000,
+    "compareAtPrice": 60000,
+    "categoryId": "655000000000000000000002",
     "images": [
-      "https://images.unsplash.com/photo-1506629082955-511b1aa562c8",
-      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a"
+      "https://images.unsplash.com/photo-1505693314120-0d443867891c",
+      "https://images.unsplash.com/photo-1582582621959-48d27397dc69"
     ],
     "variants": [
-      { "sku": "P2-30-K", "size": "30", "color": "Khaki", "stock": 10, "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8" },
-      { "sku": "P2-32-K", "size": "32", "color": "Khaki", "stock": 15, "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8" },
-      { "sku": "P2-34-K", "size": "34", "color": "Khaki", "stock": 12, "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8" },
-      { "sku": "P2-30-N", "size": "30", "color": "Navy", "stock": 8, "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a" },
-      { "sku": "P2-32-N", "size": "32", "color": "Navy", "stock": 18, "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a" },
-      { "sku": "P2-34-N", "size": "34", "color": "Navy", "stock": 14, "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a" }
+      { "sku": "MAT-1-140", "size": "140x190", "color": "Blanc", "stock": 10, "image": "https://images.unsplash.com/photo-1505693314120-0d443867891c" },
+      { "sku": "MAT-1-160", "size": "160x200", "color": "Blanc", "stock": 15, "image": "https://images.unsplash.com/photo-1582582621959-48d27397dc69" }
     ],
-    "sizes": ["30", "32", "34"],
-    "colors": ["Khaki", "Navy"],
-    "tags": ["pants", "chino", "casual"],
+    "sizes": ["140x190", "160x200"],
+    "colors": ["Blanc"],
+    "tags": ["matelas", "literie", "chambre"],
     "topSelling": true,
     "salesCount": 198,
     "featured": true,
@@ -59,49 +51,48 @@
   },
   {
     "_id": "655000000000000000000013",
-    "name": "Women's Floral Dress",
-    "slug": "womens-floral-dress",
-    "description": "Elegant floral pattern summer dress. Light and breathable fabric perfect for warm weather.",
-    "price": 6500,
-    "compareAtPrice": 7800,
+    "name": "Lit Double en Bois",
+    "slug": "lit-double-bois",
+    "description": "Lit double robuste avec cadre en bois massif. Design intemporel.",
+    "price": 65000,
+    "compareAtPrice": 78000,
     "categoryId": "655000000000000000000002",
     "images": [
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1",
-      "https://images.unsplash.com/photo-1595777457583-95e059d581b8"
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+      "https://images.unsplash.com/photo-1505693314120-0d443867891c"
     ],
     "variants": [
-      { "sku": "P3-S-F", "size": "S", "color": "Floral", "stock": 8, "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" },
-      { "sku": "P3-M-F", "size": "M", "color": "Floral", "stock": 12, "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" },
-      { "sku": "P3-L-F", "size": "L", "color": "Floral", "stock": 10, "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" }
+      { "sku": "LIT-1-140", "size": "140x190", "color": "Chêne Naturel", "stock": 8, "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" },
+      { "sku": "LIT-1-160", "size": "160x200", "color": "Chêne Naturel", "stock": 5, "image": "https://images.unsplash.com/photo-1505693314120-0d443867891c" }
     ],
-    "sizes": ["S", "M", "L"],
-    "colors": ["Floral"],
-    "tags": ["dress", "summer", "elegant"],
+    "sizes": ["140x190", "160x200"],
+    "colors": ["Chêne Naturel"],
+    "tags": ["lit", "bois", "chambre"],
     "topSelling": true,
-    "salesCount": 176,
+    "salesCount": 76,
     "featured": false,
     "active": true,
     "createdAt": "2024-01-17T10:00:00.000Z"
   },
   {
     "_id": "655000000000000000000014",
-    "name": "Leather Crossbody Bag",
-    "slug": "leather-crossbody-bag",
-    "description": "Premium genuine leather crossbody bag with adjustable strap. Compact and stylish.",
-    "price": 8900,
-    "compareAtPrice": 10500,
-    "categoryId": "655000000000000000000003",
+    "name": "Table Basse Moderne",
+    "slug": "table-basse-moderne",
+    "description": "Table basse au design minimaliste pour votre salon.",
+    "price": 18900,
+    "compareAtPrice": 22500,
+    "categoryId": "655000000000000000000001",
     "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa",
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7"
+      "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc",
+      "https://images.unsplash.com/photo-1533090161767-e6ffed986c88"
     ],
     "variants": [
-      { "sku": "P4-OS-BL", "size": "One Size", "color": "Black", "stock": 15, "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa" },
-      { "sku": "P4-OS-BR", "size": "One Size", "color": "Brown", "stock": 12, "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7" }
+      { "sku": "TAB-1-N", "size": "Standard", "color": "Noir", "stock": 15, "image": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc" },
+      { "sku": "TAB-1-B", "size": "Standard", "color": "Blanc", "stock": 12, "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88" }
     ],
-    "sizes": ["One Size"],
-    "colors": ["Black", "Brown"],
-    "tags": ["bag", "leather", "accessory"],
+    "sizes": ["Standard"],
+    "colors": ["Noir", "Blanc"],
+    "tags": ["table", "salon", "mobilier"],
     "topSelling": true,
     "salesCount": 156,
     "featured": true,
@@ -110,51 +101,48 @@
   },
   {
     "_id": "655000000000000000000015",
-    "name": "Classic Sneakers",
-    "slug": "classic-sneakers",
-    "description": "Timeless white sneakers with comfortable cushioning. Perfect for everyday wear.",
-    "price": 7200,
-    "compareAtPrice": 8500,
-    "categoryId": "655000000000000000000004",
+    "name": "Meuble TV Scandinave",
+    "slug": "meuble-tv-scandinave",
+    "description": "Meuble TV élégant avec espaces de rangement pratiques.",
+    "price": 27200,
+    "compareAtPrice": 32500,
+    "categoryId": "655000000000000000000001",
     "images": [
-      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
     ],
     "variants": [
-      { "sku": "P5-40-W", "size": "40", "color": "White", "stock": 10, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" },
-      { "sku": "P5-41-W", "size": "41", "color": "White", "stock": 14, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" },
-      { "sku": "P5-42-W", "size": "42", "color": "White", "stock": 16, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" },
-      { "sku": "P5-43-W", "size": "43", "color": "White", "stock": 12, "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" }
+      { "sku": "MTV-1-120", "size": "120cm", "color": "Bois Clair", "stock": 10, "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" },
+      { "sku": "MTV-1-160", "size": "160cm", "color": "Bois Clair", "stock": 14, "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" }
     ],
-    "sizes": ["40", "41", "42", "43"],
-    "colors": ["White"],
-    "tags": ["sneakers", "shoes", "casual"],
+    "sizes": ["120cm", "160cm"],
+    "colors": ["Bois Clair"],
+    "tags": ["meuble", "tv", "salon"],
     "topSelling": true,
-    "salesCount": 189,
+    "salesCount": 89,
     "featured": true,
     "active": true,
     "createdAt": "2024-01-19T10:00:00.000Z"
   },
   {
     "_id": "655000000000000000000016",
-    "name": "Cotton T-Shirt Pack",
-    "slug": "cotton-tshirt-pack",
-    "description": "Pack of 3 premium cotton t-shirts. Essential basics for your wardrobe.",
-    "price": 4200,
-    "compareAtPrice": 5400,
-    "categoryId": "655000000000000000000001",
+    "name": "Lampe sur Pied Design",
+    "slug": "lampe-pied-design",
+    "description": "Lampe sur pied élégante pour une ambiance chaleureuse.",
+    "price": 14200,
+    "compareAtPrice": 18400,
+    "categoryId": "655000000000000000000004",
     "images": [
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a"
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+      "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15"
     ],
     "variants": [
-      { "sku": "P6-S-MIX", "size": "S", "color": "Mixed", "stock": 20, "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" },
-      { "sku": "P6-M-MIX", "size": "M", "color": "Mixed", "stock": 25, "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" },
-      { "sku": "P6-L-MIX", "size": "L", "color": "Mixed", "stock": 22, "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" }
+      { "sku": "LMP-1-N", "size": "150cm", "color": "Noir", "stock": 20, "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c" },
+      { "sku": "LMP-1-L", "size": "150cm", "color": "Laiton", "stock": 25, "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15" }
     ],
-    "sizes": ["S", "M", "L"],
-    "colors": ["Mixed"],
-    "tags": ["tshirt", "basics", "cotton"],
+    "sizes": ["150cm"],
+    "colors": ["Noir", "Laiton"],
+    "tags": ["lampe", "décoration", "accessoires"],
     "topSelling": false,
     "salesCount": 95,
     "featured": false,

@@ -137,7 +137,7 @@ export default function ReturnsPage() {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold text-zak-black mb-4">المنتجات غير القابلة للإرجاع</h2>
                 <ul className="space-y-2 text-gray-700">
-                  <li>الملابس الداخلية والجوارب (لأسباب صحية)</li>
+                  <li>الوسائد والشراشف (لأسباب صحية)</li>
                   <li>المنتجات المستخدمة أو المغسولة</li>
                   <li>المنتجات بدون علامات أو ملصقات أصلية</li>
                   <li>المنتجات المخفضة أو في التخفيضات الموسمية</li>
@@ -217,7 +217,7 @@ export default function ReturnsPage() {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold text-zak-black mb-4">Produits Non Retournables</h2>
                 <ul className="space-y-2 text-gray-700">
-                  <li>Sous-vêtements et chaussettes (pour des raisons d&apos;hygiène)</li>
+                  <li>Oreillers et draps (pour des raisons d&apos;hygiène)</li>
                   <li>Produits utilisés ou lavés</li>
                   <li>Produits sans étiquettes ou labels d&apos;origine</li>
                   <li>Produits soldés ou en promotion saisonnière</li>

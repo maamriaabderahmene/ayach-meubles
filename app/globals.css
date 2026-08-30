@@ -326,7 +326,7 @@
     @apply relative z-10 text-center px-4 py-20 max-w-3xl mx-auto;
   }
   .hero-banner__heading {
-    @apply text-4xl md:text-6xl lg:text-7xl font-sans font-bold
+    @apply text-4xl md:text-6xl lg:text-7xl font-serif
            leading-tight mb-6;
     color: #FAF7F0;
     letter-spacing: -0.03em;

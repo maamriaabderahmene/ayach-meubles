@@ -4,6 +4,7 @@ import { useI18n } from "@/lib/i18n";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { trackCustomEvent } from "@/components/MetaPixel";
+import Logo from "./Logo";
 
 interface SocialLink {
   platform: string;
@@ -88,10 +89,10 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="block w-[3px] h-5 bg-[#D4AF37]" />
-              <span className="font-sans text-xl font-bold text-white">
-                ZAK <span className="font-light text-white/40">SHOP</span>
+            <div className="flex items-center gap-3 mb-6">
+              <Logo width={48} height={48} />
+              <span className="font-serif text-xl font-bold text-white">
+                LAYACHI <span className="font-sans font-light text-white/50 text-[0.6em] ml-1 tracking-[0.2em] align-middle">BEDDING</span>
               </span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed mb-5">
@@ -173,7 +174,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 mt-0.5 shrink-0 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
-                <span>contact@zak-shop-officiel.com</span>
+                <span>contact@layachi-bedding.com</span>
               </li>
             </ul>
           </div>
@@ -184,7 +185,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/30 font-sans">
-            &copy; {new Date().getFullYear()} ZAK SHOP — Algérie /  الجزائر
+            &copy; {new Date().getFullYear()} LAYACHI BEDDING — Algérie /  الجزائر
           </p>
           <p className="text-xs text-white/20 font-sans">
             {locale === "ar" ? "جميع الحقوق محفوظة" : "Tous droits réservés"}

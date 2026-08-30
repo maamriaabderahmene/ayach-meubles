@@ -33,7 +33,7 @@
   "footer.returnPolicy": "سياسة الإرجاع",
   "footer.shipping": "الشحن",
   "footer.faq": "الأسئلة الشائعة",
-  "footer.brandDesc": "زاك شوب — ملابس فاخرة للرجال والنساء، توصيل سريع لجميع ولايات الجزائر",
+  "footer.brandDesc": "لعياشي للأفرشة — أثاث وأفرشة فاخرة، توصيل سريع لجميع ولايات الجزائر",
   "footer.returns": "الإرجاع والاستبدال",
   "footer.terms": "الشروط والأحكام",
   
@@ -41,17 +41,17 @@
   "language.french": "Français",
   "language.switchTo": "التبديل إلى",
   
-  "hero.title": "أزياء فاخرة",
-  "hero.subtitle": "موضة راقية للرجال والنساء، توصيل سريع لجميع ولايات الجزائر",
+  "hero.title": "أفرشة وأثاث فاخر",
+  "hero.subtitle": "أثاث وأفرشة راقية لمنزلك، توصيل سريع لجميع ولايات الجزائر",
   "hero.shopNow": "تسوق الآن",
   "hero.allProducts": "جميع المنتجات",
-  "hero.overline": "أزياء فاخرة للرجال والنساء",
+  "hero.overline": "أفرشة وأثاث فاخر لمنزلك",
   
   "home.categoriesTitle": "تسوق حسب الفئة",
   "home.featuredTitle": "منتجات مميزة",
   "home.ctaDesc": "اكتشف أحدث الوصولات والقطع العصرية بجودة عالية وأسعار في المتناول.",
-  "home.aboutTitle": "عن زاك شوب",
-  "home.aboutDesc": "زاك شوب — المتجر الأول للملابس الراقية في الجزائر. نقدم أفضل تشكيلة من الملابس بأسعار تنافسية وتوصيل سريع. رضاكم هو أولويتنا.",
+  "home.aboutTitle": "عن لعياشي للأفرشة",
+  "home.aboutDesc": "لعياشي للأفرشة — المتجر الأول للأثاث والأفرشة الراقية في الجزائر. نقدم أفضل تشكيلة بأسعار تنافسية وتوصيل سريع. رضاكم هو أولويتنا.",
   "home.statsProducts": "منتجات",
   "home.statsCustomers": "عملاء",
   "home.statsRating": "تقييم",
@@ -73,7 +73,7 @@
   "products.reviews": "التقييمات",
   "products.quantity": "الكمية",
   "products.colors": "الألوان",
-  "products.sizes": "المقاسات",
+  "products.sizes": "الأبعاد",
   
   "categories.title": "التصنيفات",
   "categories.subtitle": "استكشف فئاتنا",
@@ -133,7 +133,7 @@
   "checkout.failedToLoadWilayas": "فشل تحميل الولايات",
   "checkout.calculating": "جاري الحساب...",
   "checkout.selectWilaya": "اختر الولاية",
-  "checkout.size": "المقاس",
+  "checkout.size": "الأبعاد",
   "checkout.color": "اللون",
   "checkout.qty": "الكمية",
   "checkout.form.name": "الاسم الكامل",
@@ -201,6 +201,6 @@
   "bundle.noOffers": "لا توجد عروض حزمة متاحة",
   "bundle.loading": "جاري تحميل العروض...",
   "bundle.badge": "عروض الحزمة",
-  "bundle.selectVariants": "يرجى اختيار المقاس واللون أعلاه",
+  "bundle.selectVariants": "يرجى اختيار الأبعاد واللون أعلاه",
   "bundle.bundleSelected": "تم تحديد حزمة"
 }

@@ -1,7 +1,7 @@
-// ZAK SHOP — Dynamic Sitemap for SEO
+// Layachi Bedding — Dynamic Sitemap for SEO
 import { MetadataRoute } from 'next';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.zak-shop-officiel.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://layachi-bedding.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
