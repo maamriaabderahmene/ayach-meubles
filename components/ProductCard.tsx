@@ -37,7 +37,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
     const variant = product.variants?.[0] ?? {
       sku: `${product._id}-default`,
-      size: "Standard",
+      dimension: "Standard",
       color: "Default",
       stock: 1,
     };
@@ -48,7 +48,7 @@ export default function ProductCard({ product }: { product: Product }) {
       unitPrice: product.price,
       sku: variant.sku,
       qty: 1,
-      selectedSize: variant.size,
+      selectedDimension: variant.dimension,
       selectedColor: variant.color,
     }]));
 

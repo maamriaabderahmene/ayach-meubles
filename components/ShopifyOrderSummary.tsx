@@ -8,7 +8,7 @@ interface CartItem {
   unitPrice: number;
   sku: string;
   qty: number;
-  selectedSize: string;
+  selectedDimension: string;
   selectedColor: string;
   image?: string;
 }
@@ -71,8 +71,8 @@ export default function ShopifyOrderSummary({
                   {item.productName}
                 </h3>
                 <div className="mt-1 text-xs text-gray-500 space-y-0.5">
-                  {item.selectedSize && (
-                    <div>{t('checkout.size')}: {item.selectedSize}</div>
+                  {item.selectedDimension && (
+                    <div>{t('checkout.size')}: {item.selectedDimension}</div>
                   )}
                   {item.selectedColor && (
                     <div>{t('checkout.color')}: {item.selectedColor}</div>

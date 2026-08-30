@@ -81,7 +81,7 @@ export default function OrdersPage() {
     address: "",
     deliveryType: "to_home",
     notes: "",
-    items: [{ productId: "", quantity: "1", selectedSize: "", selectedColor: "", unitPrice: "" }],
+    items: [{ productId: "", quantity: "1", selectedDimension: "", selectedColor: "", unitPrice: "" }],
   });
   const [communeOptions, setCommuneOptions] = useState<string[]>([]);
   const [stopdeskOptions, setStopdeskOptions] = useState<string[]>([]);
@@ -287,7 +287,7 @@ export default function OrdersPage() {
       address: "",
       deliveryType: "to_home",
       notes: "",
-      items: [{ productId: "", quantity: "1", selectedSize: "", selectedColor: "", unitPrice: "" }],
+      items: [{ productId: "", quantity: "1", selectedDimension: "", selectedColor: "", unitPrice: "" }],
     });
     setCommuneOptions([]);
     setShowCreateModal(true);
@@ -369,7 +369,7 @@ export default function OrdersPage() {
   const addItem = () => {
     setCreateForm({
       ...createForm,
-      items: [...createForm.items, { productId: "", quantity: "1", selectedSize: "", selectedColor: "", unitPrice: "" }],
+      items: [...createForm.items, { productId: "", quantity: "1", selectedDimension: "", selectedColor: "", unitPrice: "" }],
     });
   };
 
@@ -764,7 +764,7 @@ export default function OrdersPage() {
                         <div>
                           <p className="font-medium">{item.productName}</p>
                           <p className="text-xs text-gray-500">
-                            {item.selectedSize && `Size: ${item.selectedSize}`}{" "}
+                            {item.selectedDimension && `Dimension: ${item.selectedDimension}`}{" "}
                             {item.selectedColor && `| Color: ${item.selectedColor}`}
                           </p>
                         </div>
@@ -1010,10 +1010,10 @@ export default function OrdersPage() {
                         {selectedProduct && (
                           <div className="space-y-2">
                             <div className="flex gap-2">
-                              {selectedProduct.sizes?.length > 0 && (
-                                <select value={item.selectedSize} onChange={(e) => updateItem(i, "selectedSize", e.target.value)} className="px-2 py-1 border border-gray-300 rounded text-xs">
-                                  <option value="">Size</option>
-                                  {selectedProduct.sizes.map((s: string) => <option key={s} value={s}>{s}</option>)}
+                              {selectedProduct.dimensions?.length > 0 && (
+                                <select value={item.selectedDimension} onChange={(e) => updateItem(i, "selectedDimension", e.target.value)} className="px-2 py-1 border border-gray-300 rounded text-xs">
+                                  <option value="">Dimension</option>
+                                  {selectedProduct.dimensions.map((s: string) => <option key={s} value={s}>{s}</option>)}
                                 </select>
                               )}
                               {selectedProduct.colors?.length > 0 && (

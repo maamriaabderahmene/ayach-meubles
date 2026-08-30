@@ -12,7 +12,7 @@ interface ProductFormData {
   compareAtPrice: string;
   images: string[];
   variants: { sku: string; size: string; color: string; stock: number; price?: number; description?: string }[];
-  sizes: string[];
+  dimensions: string[];
   colors: string[];
   tags: string[];
   details: { key: string; value: string }[];
@@ -31,7 +31,7 @@ const emptyForm: ProductFormData = {
   compareAtPrice: "",
   images: [],
   variants: [],
-  sizes: [],
+  dimensions: [],
   colors: [],
   tags: [],
   details: [],
@@ -50,7 +50,7 @@ export default function NewProductPage() {
   const [toast, setToast] = useState<{ message: string; type: "success" | "error" } | null>(null);
 
   // Variant inputs
-  const [newSize, setNewSize] = useState("");
+  const [newDimension, setNewDimension] = useState("");
   const [newColor, setNewColor] = useState("");
   const [newTag, setNewTag] = useState("");
   const [newDetailKey, setNewDetailKey] = useState("");
@@ -115,14 +115,14 @@ export default function NewProductPage() {
     setForm({ ...form, images: form.images.filter((_, i) => i !== index) });
   };
 
-  const addSize = () => {
-    if (!newSize.trim() || form.sizes.includes(newSize.trim())) return;
-    setForm({ ...form, sizes: [...form.sizes, newSize.trim()] });
-    setNewSize("");
+  const addDimension = () => {
+    if (!newDimension.trim() || form.dimensions.includes(newDimension.trim())) return;
+    setForm({ ...form, dimensions: [...form.dimensions, newDimension.trim()] });
+    setNewDimension("");
   };
 
-  const removeSize = (index: number) => {
-    setForm({ ...form, sizes: form.sizes.filter((_, i) => i !== index) });
+  const removeDimension = (index: number) => {
+    setForm({ ...form, dimensions: form.dimensions.filter((_, i) => i !== index) });
   };
 
   const addColor = () => {
@@ -229,7 +229,7 @@ export default function NewProductPage() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
-                  placeholder="e.g., Classic T-Shirt"
+                  placeholder="e.g., Premium Mattress"
                 />
               </div>
               <div>
@@ -239,7 +239,7 @@ export default function NewProductPage() {
                   value={form.slug}
                   onChange={(e) => setForm({ ...form, slug: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
-                  placeholder="e.g., classic-t-shirt"
+                  placeholder="e.g., premium-mattress"
                 />
               </div>
             </div>
@@ -340,28 +340,28 @@ export default function NewProductPage() {
             )}
           </div>
 
-          {/* Sizes */}
+          {/* Dimensions */}
           <div className="space-y-3">
-            <h2 className="text-lg font-semibold text-gray-900">Sizes</h2>
+            <h2 className="text-lg font-semibold text-gray-900">Dimensions</h2>
             <div className="flex gap-2">
               <input
                 type="text"
-                value={newSize}
-                onChange={(e) => setNewSize(e.target.value)}
-                onKeyPress={(e) => e.key === "Enter" && addSize()}
+                value={newDimension}
+                onChange={(e) => setNewDimension(e.target.value)}
+                onKeyPress={(e) => e.key === "Enter" && addDimension()}
                 className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
-                placeholder="e.g., S, M, L, XL"
+                placeholder="e.g., 140x190, 160x200"
               />
-              <button onClick={addSize} className="px-4 py-2 bg-emerald-600 text-white text-sm font-medium rounded-lg hover:bg-emerald-700">
+              <button onClick={addDimension} className="px-4 py-2 bg-emerald-600 text-white text-sm font-medium rounded-lg hover:bg-emerald-700">
                 Add
               </button>
             </div>
-            {form.sizes.length > 0 && (
+            {form.dimensions.length > 0 && (
               <div className="flex flex-wrap gap-2">
-                {form.sizes.map((size, i) => (
+                {form.dimensions.map((dimension, i) => (
                   <span key={i} className="inline-flex items-center gap-1 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
-                    {size}
-                    <button onClick={() => removeSize(i)} className="text-red-500 hover:text-red-700 font-bold">×</button>
+                    {dimension}
+                    <button onClick={() => removeDimension(i)} className="text-red-500 hover:text-red-700 font-bold">×</button>
                   </span>
                 ))}
               </div>
@@ -441,7 +441,7 @@ export default function NewProductPage() {
                 onChange={(e) => setNewDetailValue(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && addDetail()}
                 className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
-                placeholder="Value (e.g., 100% Cotton)"
+                placeholder="Value (e.g., Memory Foam)"
               />
               <button onClick={addDetail} className="px-4 py-2 bg-emerald-600 text-white text-sm font-medium rounded-lg hover:bg-emerald-700">
                 Add

@@ -19,12 +19,12 @@ interface Product {
   images: string[];
   variants: Array<{
     sku: string;
-    size: string;
+    dimension: string;
     color: string;
     stock: number;
     image?: string;
   }>;
-  sizes: string[];
+  dimensions: string[];
   colors: string[];
 }
 
@@ -39,7 +39,7 @@ interface Wilaya {
 export default function ProductPage({ params }: { params: { slug: string } }) {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
-  const [selectedSize, setSelectedSize] = useState("");
+  const [selectedDimension, setSelectedDimension] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
@@ -86,7 +86,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         setProduct(data);
 
         // Set defaults
-        if (data.sizes.length > 0) setSelectedSize(data.sizes[0]);
+        if (data.dimensions.length > 0) setSelectedDimension(data.dimensions[0]);
         if (data.colors.length > 0) setSelectedColor(data.colors[0]);
 
         // Track ViewContent - now handles both client pixel and server Conversions API with event_id
@@ -312,16 +312,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           return;
         }
 
-        // Aggregate variants by size and color
-        const variantMap = new Map<string, { size: string, color: string, qty: number }>();
+        // Aggregate variants by dimension and color
+        const variantMap = new Map<string, { dimension: string, color: string, qty: number }>();
 
         selectedBundleVariants.forEach((variant) => {
-          const key = `${variant.size}|||${variant.color}`;
+          const key = `${variant.dimension}|||${variant.color}`;
           if (variantMap.has(key)) {
             variantMap.get(key)!.qty += 1;
           } else {
             variantMap.set(key, {
-              size: variant.size,
+              dimension: variant.dimension,
               color: variant.color,
               qty: 1
             });
@@ -331,16 +331,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         // Create items from aggregated variants
         items = Array.from(variantMap.values()).map((variantData) => {
           const variantObj = product.variants.find(
-            (v) => v.size === variantData.size && v.color === variantData.color
+            (v) => v.dimension === variantData.dimension && v.color === variantData.color
           );
 
           return {
             productId: product._id,
             productName: product.name,
             unitPrice: product.price,
-            sku: variantObj?.sku || `${product._id}-${variantData.size}-${variantData.color}`,
+            sku: variantObj?.sku || `${product._id}-${variantData.dimension}-${variantData.color}`,
             qty: variantData.qty,
-            selectedSize: variantData.size,
+            selectedDimension: variantData.dimension,
             selectedColor: variantData.color,
           };
         });
@@ -352,7 +352,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           unitPrice: product.price,
           sku: selectedVariant?.sku || `${product._id}-default`,
           qty: quantity,
-          selectedSize: selectedSize,
+          selectedDimension: selectedDimension,
           selectedColor: selectedColor,
         }];
       }
@@ -458,7 +458,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     : 0;
 
   const selectedVariant = product.variants.find(
-    (v) => v.size === selectedSize && v.color === selectedColor
+    (v) => v.dimension === selectedDimension && v.color === selectedColor
   );
 
   // Find best matching bundle for current quantity
@@ -551,24 +551,24 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
           {/* Variant Selection Section - with ref for scrolling */}
           <div ref={variantsRef} className="transition-all duration-300">
-            {/* Size Selection */}
-            {product.sizes.length > 0 && (
+            {/* Dimension Selection */}
+            {product.dimensions.length > 0 && (
               <div className="mb-6">
                 <label className="block font-semibold mb-2">
                   {locale === 'ar' ? 'المقاس:' : 'Dimension:'}
                 </label>
                 <div className="flex flex-wrap gap-2">
-                  {product.sizes.map((size) => (
+                  {product.dimensions.map((dimension) => (
                     <button
-                      key={size}
-                      onClick={() => { setSelectedSize(size); trackCustomEvent("SelectSize", { size, product_id: product._id, product_name: product.name }); }}
-                      className={`px-4 py-2 border rounded-md transition ${selectedSize === size
+                      key={dimension}
+                      onClick={() => { setSelectedDimension(dimension); trackCustomEvent("SelectDimension", { dimension, product_id: product._id, product_name: product.name }); }}
+                      className={`px-4 py-2 border rounded-md transition ${selectedDimension === dimension
                           ? "border-primary bg-primary text-white"
                           : "border-gray-300 hover:border-primary"
                         }`}
-                      aria-label={`${locale === 'ar' ? 'اختر المقاس' : 'Sélectionner la taille'} ${size}`}
+                      aria-label={`${locale === 'ar' ? 'اختر المقاس' : 'Sélectionner la dimension'} ${dimension}`}
                     >
-                      {size}
+                      {dimension}
                     </button>
                   ))}
                 </div>
@@ -651,7 +651,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     currentQuantity={quantity}
                     isSelected={selectedBundle?._id === bundle._id}
                     onSelect={handleBundleSelect}
-                    availableSizes={product.sizes}
+                    availableDimensions={product.dimensions}
                     availableColors={product.colors}
                   />
                 ))}
@@ -768,15 +768,15 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                       selectedBundle && selectedBundleVariants.length > 0
                         ? selectedBundleVariants.map((variant) => {
                           const variantObj = product.variants.find(
-                            (v) => v.size === variant.size && v.color === variant.color
+                            (v) => v.dimension === variant.dimension && v.color === variant.color
                           );
                           return {
                             productId: product._id,
                             productName: product.name,
                             unitPrice: product.price,
-                            sku: variantObj?.sku || `${product._id}-${variant.size}-${variant.color}`,
+                            sku: variantObj?.sku || `${product._id}-${variant.dimension}-${variant.color}`,
                             qty: 1,
-                            selectedSize: variant.size,
+                            selectedDimension: variant.dimension,
                             selectedColor: variant.color,
                             image: product.images[0],
                           };
@@ -787,7 +787,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                           unitPrice: product.price,
                           sku: selectedVariant?.sku || `${product._id}-default`,
                           qty: quantity,
-                          selectedSize: selectedSize,
+                          selectedDimension: selectedDimension,
                           selectedColor: selectedColor,
                           image: product.images[0],
                         }]

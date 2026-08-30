@@ -367,7 +367,7 @@ export default function ExpeditedOrdersPage() {
                         <div>
                           <p className="font-bold text-gray-900">{item.productName}</p>
                           <p className="text-xs text-gray-500">
-                            {item.selectedSize && `Size: ${item.selectedSize}`}
+                            {item.selectedDimension && `Dimension: ${item.selectedDimension}`}
                             {item.selectedColor && ` | Color: ${item.selectedColor}`}
                           </p>
                         </div>

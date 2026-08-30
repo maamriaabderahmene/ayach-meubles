@@ -12,7 +12,7 @@ interface Product {
   compareAtPrice?: number;
   images: string[];
   variants: any[];
-  sizes: string[];
+  dimensions: string[];
   colors: string[];
   tags: string[];
   featured: boolean;
@@ -43,8 +43,8 @@ interface ProductFormData {
   price: string;
   compareAtPrice: string;
   images: string[];
-  variants: { sku: string; size: string; color: string; stock: number; price?: number; description?: string }[];
-  sizes: string[];
+  variants: { sku: string; dimension: string; color: string; stock: number; price?: number; description?: string }[];
+  dimensions: string[];
   colors: string[];
   tags: string[];
   details: { key: string; value: string }[];
@@ -63,7 +63,7 @@ const emptyForm: ProductFormData = {
   compareAtPrice: "",
   images: [],
   variants: [],
-  sizes: [],
+  dimensions: [],
   colors: [],
   tags: [],
   details: [],
@@ -96,7 +96,7 @@ export default function ProductsPage() {
   const [bundleProductId, setBundleProductId] = useState<string | null>(null);
 
   // Variant inputs
-  const [newSize, setNewSize] = useState("");
+  const [newDimension, setNewDimension] = useState("");
   const [newColor, setNewColor] = useState("");
   const [newTag, setNewTag] = useState("");
   const [newDetailKey, setNewDetailKey] = useState("");
@@ -184,7 +184,7 @@ export default function ProductsPage() {
       compareAtPrice: product.compareAtPrice ? String(product.compareAtPrice) : "",
       images: product.images || [],
       variants: product.variants || [],
-      sizes: product.sizes || [],
+      dimensions: product.dimensions || [],
       colors: product.colors || [],
       tags: product.tags || [],
       details: product.details
@@ -395,7 +395,7 @@ export default function ProductsPage() {
                   <th className="px-4 py-3 text-left font-medium">Name</th>
                   <th className="px-4 py-3 text-left font-medium">Price</th>
                   <th className="px-4 py-3 text-left font-medium">Stock</th>
-                  <th className="px-4 py-3 text-left font-medium">Sizes</th>
+                  <th className="px-4 py-3 text-left font-medium">Dimensions</th>
                   <th className="px-4 py-3 text-left font-medium">Status</th>
                   <th className="px-4 py-3 text-left font-medium">Sales</th>
                   <th className="px-4 py-3 text-left font-medium">Actions</th>
@@ -457,7 +457,7 @@ export default function ProductsPage() {
                         </span>
                       </td>
                       <td className="px-4 py-3 text-xs text-gray-500">
-                        {product.sizes?.join(", ") || "—"}
+                        {product.dimensions?.join(", ") || "—"}
                       </td>
                       <td className="px-4 py-3">
                         <span
@@ -665,38 +665,38 @@ export default function ProductsPage() {
                   </div>
                 </div>
 
-                {/* Sizes */}
+                {/* Dimensions */}
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-700 mb-2">Sizes</h3>
+                  <h3 className="text-sm font-semibold text-gray-700 mb-2">Dimensions</h3>
                   <div className="flex flex-wrap gap-2 mb-2">
-                    {form.sizes.map((s, i) => (
+                    {form.dimensions.map((s, i) => (
                       <span key={i} className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 text-sm rounded">
                         {s}
-                        <button onClick={() => setForm({ ...form, sizes: form.sizes.filter((_, j) => j !== i) })} className="text-gray-400 hover:text-red-500" title="Remove size">&times;</button>
+                        <button onClick={() => setForm({ ...form, dimensions: form.dimensions.filter((_, j) => j !== i) })} className="text-gray-400 hover:text-red-500" title="Remove dimension">&times;</button>
                       </span>
                     ))}
                   </div>
                   <div className="flex gap-2">
                     <input
                       type="text"
-                      value={newSize}
-                      onChange={(e) => setNewSize(e.target.value)}
+                      value={newDimension}
+                      onChange={(e) => setNewDimension(e.target.value)}
                       onKeyDown={(e) => {
-                        if (e.key === "Enter" && newSize.trim()) {
+                        if (e.key === "Enter" && newDimension.trim()) {
                           e.preventDefault();
-                          setForm({ ...form, sizes: [...form.sizes, newSize.trim()] });
-                          setNewSize("");
+                          setForm({ ...form, dimensions: [...form.dimensions, newDimension.trim()] });
+                          setNewDimension("");
                         }
                       }}
-                      placeholder="Add size"
+                      placeholder="Add dimension"
                       className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm flex-1 focus:ring-2 focus:ring-emerald-500 outline-none"
                     />
                     <button
                       type="button"
                       onClick={() => {
-                        if (newSize.trim()) {
-                          setForm({ ...form, sizes: [...form.sizes, newSize.trim()] });
-                          setNewSize("");
+                        if (newDimension.trim()) {
+                          setForm({ ...form, dimensions: [...form.dimensions, newDimension.trim()] });
+                          setNewDimension("");
                         }
                       }}
                       className="px-3 py-1.5 bg-gray-100 text-sm rounded-lg hover:bg-gray-200"
@@ -758,21 +758,21 @@ export default function ProductsPage() {
                     )}
                   </h3>
                   
-                  {form.sizes.length > 0 && form.colors.length > 0 && (
+                  {form.dimensions.length > 0 && form.colors.length > 0 && (
                     <div className="mb-3">
                       <button
                         type="button"
                         onClick={() => {
                           const newVariants: any[] = [];
-                          for (const size of form.sizes) {
+                          for (const dimension of form.dimensions) {
                             for (const color of form.colors) {
                               const existing = form.variants.find(
-                                (v) => v.size === size && v.color === color
+                                (v) => v.dimension === dimension && v.color === color
                               );
                               if (!existing) {
                                 newVariants.push({
-                                  sku: `${form.slug || "P"}-${size}-${color.charAt(0)}`.toUpperCase(),
-                                  size,
+                                  sku: `${form.slug || "P"}-${dimension}-${color.charAt(0)}`.toUpperCase(),
+                                  dimension,
                                   color,
                                   stock: 0,
                                   price: undefined,
@@ -793,10 +793,10 @@ export default function ProductsPage() {
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                         </svg>
-                        Generate All Variants ({form.sizes.length} × {form.colors.length} = {form.sizes.length * form.colors.length})
+                        Generate All Variants ({form.dimensions.length} × {form.colors.length} = {form.dimensions.length * form.colors.length})
                       </button>
                       <p className="text-xs text-gray-500 mt-1.5 text-center">
-                        Creates combinations from all sizes and colors above
+                        Creates combinations from all dimensions and colors above
                       </p>
                     </div>
                   )}
@@ -808,7 +808,7 @@ export default function ProductsPage() {
                           <div className="flex items-start justify-between mb-3">
                             <div className="flex items-center gap-2">
                               <div className="flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-md border border-gray-200">
-                                <span className="text-xs font-semibold text-gray-700">{v.size}</span>
+                                <span className="text-xs font-semibold text-gray-700">{v.dimension}</span>
                                 <span className="text-gray-300">•</span>
                                 <span className="text-xs font-semibold text-gray-700">{v.color}</span>
                               </div>
@@ -816,7 +816,7 @@ export default function ProductsPage() {
                             </div>
                             <button
                               onClick={() => {
-                                if (confirm(`Remove variant ${v.size}/${v.color}?`)) {
+                                if (confirm(`Remove variant ${v.dimension}/${v.color}?`)) {
                                   setForm({ ...form, variants: form.variants.filter((_, j) => j !== i) });
                                 }
                               }}
@@ -882,7 +882,7 @@ export default function ProductsPage() {
                               }}
                               rows={2}
                               className="w-full px-2.5 py-1.5 border border-gray-300 rounded-md text-xs focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none resize-none bg-white"
-                              placeholder={`Specific details for ${v.size}/${v.color} variant...`}
+                              placeholder={`Specific details for ${v.dimension}/${v.color} variant...`}
                             />
                           </div>
                         </div>

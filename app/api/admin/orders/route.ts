@@ -145,7 +145,7 @@ export async function POST(request: NextRequest) {
         unitPrice,
         sku: item.sku || null,
         quantity: qty,
-        selectedSize: item.selectedSize || null,
+        selectedDimension: item.selectedDimension || item.selectedSize || null,
         selectedColor: item.selectedColor || null,
         total: itemTotal,
       });

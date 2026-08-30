@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
     const category = searchParams.get("category");
     const minPrice = searchParams.get("minPrice");
     const maxPrice = searchParams.get("maxPrice");
-    const sizes = searchParams.get("sizes")?.split(",").filter(Boolean);
+    const dimensions = searchParams.get("dimensions")?.split(",").filter(Boolean);
     const colors = searchParams.get("colors")?.split(",").filter(Boolean);
     const search = searchParams.get("search");
     const inStockOnly = searchParams.get("inStockOnly") === "true";
@@ -52,8 +52,8 @@ export async function GET(request: NextRequest) {
       if (maxPrice) filter.price.$lte = parseFloat(maxPrice);
     }
 
-    if (sizes && sizes.length > 0) {
-      filter.sizes = { $in: sizes };
+    if (dimensions && dimensions.length > 0) {
+      filter.dimensions = { $in: dimensions };
     }
 
     if (colors && colors.length > 0) {

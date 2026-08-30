@@ -12,10 +12,10 @@
       "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e"
     ],
     "variants": [
-      { "sku": "SOF-1-G", "size": "200x90", "color": "Gris", "stock": 5, "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc" },
-      { "sku": "SOF-1-B", "size": "200x90", "color": "Beige", "stock": 3, "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e" }
+      { "sku": "SOF-1-G", "dimension": "200x90", "color": "Gris", "stock": 5, "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc" },
+      { "sku": "SOF-1-B", "dimension": "200x90", "color": "Beige", "stock": 3, "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e" }
     ],
-    "sizes": ["200x90"],
+    "dimensions": ["200x90"],
     "colors": ["Gris", "Beige"],
     "tags": ["canapé", "salon", "mobilier"],
     "topSelling": true,
@@ -37,10 +37,10 @@
       "https://images.unsplash.com/photo-1582582621959-48d27397dc69"
     ],
     "variants": [
-      { "sku": "MAT-1-140", "size": "140x190", "color": "Blanc", "stock": 10, "image": "https://images.unsplash.com/photo-1505693314120-0d443867891c" },
-      { "sku": "MAT-1-160", "size": "160x200", "color": "Blanc", "stock": 15, "image": "https://images.unsplash.com/photo-1582582621959-48d27397dc69" }
+      { "sku": "MAT-1-140", "dimension": "140x190", "color": "Blanc", "stock": 10, "image": "https://images.unsplash.com/photo-1505693314120-0d443867891c" },
+      { "sku": "MAT-1-160", "dimension": "160x200", "color": "Blanc", "stock": 15, "image": "https://images.unsplash.com/photo-1582582621959-48d27397dc69" }
     ],
-    "sizes": ["140x190", "160x200"],
+    "dimensions": ["140x190", "160x200"],
     "colors": ["Blanc"],
     "tags": ["matelas", "literie", "chambre"],
     "topSelling": true,
@@ -62,10 +62,10 @@
       "https://images.unsplash.com/photo-1505693314120-0d443867891c"
     ],
     "variants": [
-      { "sku": "LIT-1-140", "size": "140x190", "color": "Chêne Naturel", "stock": 8, "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" },
-      { "sku": "LIT-1-160", "size": "160x200", "color": "Chêne Naturel", "stock": 5, "image": "https://images.unsplash.com/photo-1505693314120-0d443867891c" }
+      { "sku": "LIT-1-140", "dimension": "140x190", "color": "Chêne Naturel", "stock": 8, "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" },
+      { "sku": "LIT-1-160", "dimension": "160x200", "color": "Chêne Naturel", "stock": 5, "image": "https://images.unsplash.com/photo-1505693314120-0d443867891c" }
     ],
-    "sizes": ["140x190", "160x200"],
+    "dimensions": ["140x190", "160x200"],
     "colors": ["Chêne Naturel"],
     "tags": ["lit", "bois", "chambre"],
     "topSelling": true,
@@ -87,10 +87,10 @@
       "https://images.unsplash.com/photo-1533090161767-e6ffed986c88"
     ],
     "variants": [
-      { "sku": "TAB-1-N", "size": "Standard", "color": "Noir", "stock": 15, "image": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc" },
-      { "sku": "TAB-1-B", "size": "Standard", "color": "Blanc", "stock": 12, "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88" }
+      { "sku": "TAB-1-N", "dimension": "Standard", "color": "Noir", "stock": 15, "image": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc" },
+      { "sku": "TAB-1-B", "dimension": "Standard", "color": "Blanc", "stock": 12, "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88" }
     ],
-    "sizes": ["Standard"],
+    "dimensions": ["Standard"],
     "colors": ["Noir", "Blanc"],
     "tags": ["table", "salon", "mobilier"],
     "topSelling": true,
@@ -112,10 +112,10 @@
       "https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
     ],
     "variants": [
-      { "sku": "MTV-1-120", "size": "120cm", "color": "Bois Clair", "stock": 10, "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" },
-      { "sku": "MTV-1-160", "size": "160cm", "color": "Bois Clair", "stock": 14, "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" }
+      { "sku": "MTV-1-120", "dimension": "120cm", "color": "Bois Clair", "stock": 10, "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" },
+      { "sku": "MTV-1-160", "dimension": "160cm", "color": "Bois Clair", "stock": 14, "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7" }
     ],
-    "sizes": ["120cm", "160cm"],
+    "dimensions": ["120cm", "160cm"],
     "colors": ["Bois Clair"],
     "tags": ["meuble", "tv", "salon"],
     "topSelling": true,
@@ -137,10 +137,10 @@
       "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15"
     ],
     "variants": [
-      { "sku": "LMP-1-N", "size": "150cm", "color": "Noir", "stock": 20, "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c" },
-      { "sku": "LMP-1-L", "size": "150cm", "color": "Laiton", "stock": 25, "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15" }
+      { "sku": "LMP-1-N", "dimension": "150cm", "color": "Noir", "stock": 20, "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c" },
+      { "sku": "LMP-1-L", "dimension": "150cm", "color": "Laiton", "stock": 25, "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15" }
     ],
-    "sizes": ["150cm"],
+    "dimensions": ["150cm"],
     "colors": ["Noir", "Laiton"],
     "tags": ["lampe", "décoration", "accessoires"],
     "topSelling": false,

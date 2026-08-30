@@ -93,12 +93,12 @@ export default function AdminSidebar({
       >
         {/* Logo */}
         <div className="flex items-center gap-3 px-5 py-5 border-b border-white/10">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
-            <span className="text-white font-extrabold text-sm">CA</span>
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#B8952D] flex items-center justify-center shadow-lg shadow-[#D4AF37]/20">
+            <span className="text-stone-900 font-extrabold text-lg font-serif">L</span>
           </div>
           <div>
-            <span className="font-bold text-base text-white tracking-wide block leading-tight">
-              ZAK SHOP
+            <span className="font-bold text-base text-white tracking-wide block leading-tight font-serif">
+              LAYACHI BEDDING
             </span>
             <span className="text-[10px] font-semibold text-emerald-400 uppercase tracking-widest">
               {t("sidebar.adminPanel")}

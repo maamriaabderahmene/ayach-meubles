@@ -43,8 +43,8 @@ export default function LoginPage() {
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
           {/* Logo */}
           <div className="text-center mb-8">
-            <div className="w-12 h-12 rounded-xl bg-emerald-600 flex items-center justify-center mx-auto mb-3">
-              <span className="text-white font-bold text-xl">C</span>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#B8952D] flex items-center justify-center mx-auto mb-3 shadow-lg shadow-[#D4AF37]/20">
+              <span className="text-stone-900 font-extrabold text-2xl font-serif">L</span>
             </div>
             <h1 className="text-xl font-semibold text-gray-900">Admin Dashboard</h1>
             <p className="text-sm text-gray-500 mt-1">Sign in to continue</p>
@@ -67,8 +67,8 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-colors"
-                placeholder="admin@crocco.dz"
+                className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37] outline-none transition-colors"
+                placeholder="admin@layachi-bedding.com"
               />
             </div>
 
@@ -82,7 +82,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-colors"
+                className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37] outline-none transition-colors"
                 placeholder="••••••••"
               />
             </div>
@@ -90,7 +90,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2.5 bg-emerald-600 text-white text-sm font-medium rounded-lg hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="w-full py-2.5 bg-[#D4AF37] text-stone-900 text-sm font-bold rounded-lg hover:bg-[#B8952D] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               {loading ? "Signing in..." : "Sign In"}
             </button>

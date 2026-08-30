@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
       categoryId: body.categoryId || null,
       images: body.images || [],
       variants: body.variants || [],
-      sizes: body.sizes || [],
+      dimensions: body.dimensions || [],
       colors: body.colors || [],
       tags: body.tags || [],
       details: body.details || null,

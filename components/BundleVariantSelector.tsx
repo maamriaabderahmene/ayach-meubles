@@ -4,13 +4,13 @@ import { useI18n } from "@/lib/i18n";
 import { useState, useEffect } from "react";
 
 interface BundleVariant {
-  size: string;
+  dimension: string;
   color: string;
 }
 
 interface BundleVariantSelectorProps {
   bundleQuantity: number;
-  availableSizes: string[];
+  availableDimensions: string[];
   availableColors: string[];
   onVariantsChange: (variants: BundleVariant[]) => void;
   locale: string;
@@ -19,7 +19,7 @@ interface BundleVariantSelectorProps {
 
 export default function BundleVariantSelector({
   bundleQuantity,
-  availableSizes,
+  availableDimensions,
   availableColors,
   onVariantsChange,
   locale,
@@ -30,17 +30,17 @@ export default function BundleVariantSelector({
   // Initialize with default variants for each item
   useEffect(() => {
     if (bundleQuantity > 0 && variants.length === 0) {
-      if (availableSizes.length > 0 && availableColors.length > 0) {
+      if (availableDimensions.length > 0 && availableColors.length > 0) {
         const initialVariants: BundleVariant[] = Array(bundleQuantity).fill(null).map(() => ({
-          size: availableSizes[0],
+          dimension: availableDimensions[0],
           color: availableColors[0]
         }));
         setVariants(initialVariants);
         onVariantsChange(initialVariants);
-      } else if (availableSizes.length > 0) {
-        // Only sizes available
+      } else if (availableDimensions.length > 0) {
+        // Only dimensions available
         const initialVariants: BundleVariant[] = Array(bundleQuantity).fill(null).map(() => ({
-          size: availableSizes[0],
+          dimension: availableDimensions[0],
           color: ''
         }));
         setVariants(initialVariants);
@@ -48,7 +48,7 @@ export default function BundleVariantSelector({
       } else if (availableColors.length > 0) {
         // Only colors available
         const initialVariants: BundleVariant[] = Array(bundleQuantity).fill(null).map(() => ({
-          size: '',
+          dimension: '',
           color: availableColors[0]
         }));
         setVariants(initialVariants);
@@ -56,7 +56,7 @@ export default function BundleVariantSelector({
       } else {
         // No variants available
         const initialVariants: BundleVariant[] = Array(bundleQuantity).fill(null).map(() => ({
-          size: '',
+          dimension: '',
           color: ''
         }));
         setVariants(initialVariants);
@@ -72,7 +72,7 @@ export default function BundleVariantSelector({
     onVariantsChange(newVariants);
   };
 
-  const updateVariant = (index: number, field: 'size' | 'color', value: string) => {
+  const updateVariant = (index: number, field: 'dimension' | 'color', value: string) => {
     const newVariants = [...variants];
     newVariants[index] = { ...newVariants[index], [field]: value };
     handleVariantsUpdate(newVariants);
@@ -87,14 +87,14 @@ export default function BundleVariantSelector({
         <p className="text-xs text-gray-500">
           {locale === 'ar' 
             ? `اختر المقاس واللون لكل قطعة من ${bundleQuantity} قطع`
-            : `Sélectionnez la taille et la couleur pour chacun des ${bundleQuantity} articles`
+            : `Sélectionnez la dimension et la couleur pour chacun des ${bundleQuantity} articles`
           }
         </p>
       </div>
 
       <div className="space-y-3">
         {Array(bundleQuantity).fill(null).map((_, index) => {
-          const variant = variants[index] || { size: availableSizes[0] || '', color: availableColors[0] || '' };
+          const variant = variants[index] || { dimension: availableDimensions[0] || '', color: availableColors[0] || '' };
           
           return (
             <div key={index} className="p-3 bg-gray-50 rounded-lg border border-gray-200">
@@ -105,19 +105,19 @@ export default function BundleVariantSelector({
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                {/* Size */}
-                {availableSizes.length > 0 && (
+                {/* Dimension */}
+                {availableDimensions.length > 0 && (
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">
-                      {locale === 'ar' ? 'المقاس' : 'Taille'}
+                      {locale === 'ar' ? 'المقاس' : 'Dimension'}
                     </label>
                     <select
-                      value={variant.size}
-                      onChange={(e) => updateVariant(index, 'size', e.target.value)}
+                      value={variant.dimension}
+                      onChange={(e) => updateVariant(index, 'dimension', e.target.value)}
                       className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-zak-black focus:border-zak-black outline-none bg-white"
                     >
-                      {availableSizes.map((size) => (
-                        <option key={size} value={size}>{size}</option>
+                      {availableDimensions.map((dimension) => (
+                        <option key={dimension} value={dimension}>{dimension}</option>
                       ))}
                     </select>
                   </div>

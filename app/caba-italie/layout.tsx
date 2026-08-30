@@ -1,13 +1,14 @@
 import { AdminSessionProvider } from "./providers";
 import "../globals.css";
+import { Metadata } from "next";
 
 // Force dynamic rendering for all admin pages — they require auth
 // and NEXTAUTH_URL is not available at build time on Vercel
 export const dynamic = 'force-dynamic';
 
-export const metadata = {
-  title: "Admin Dashboard - ZAK SHOP",
-  description: "Admin dashboard for managing the ZAK SHOP store",
+export const metadata: Metadata = {
+  title: "Admin Dashboard - Layachi Bedding",
+  description: "Admin dashboard for managing the Layachi Bedding store",
 };
 
 export default function AdminRootLayout({

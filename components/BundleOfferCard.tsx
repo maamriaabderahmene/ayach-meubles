@@ -20,7 +20,7 @@ interface Bundle {
 }
 
 interface BundleVariant {
-  size: string;
+  dimension: string;
   color: string;
 }
 
@@ -31,7 +31,7 @@ interface BundleOfferCardProps {
   currentQuantity?: number;
   isSelected?: boolean;
   onSelect?: (bundle: Bundle, variants: BundleVariant[]) => void;
-  availableSizes?: string[];
+  availableDimensions?: string[];
   availableColors?: string[];
 }
 
@@ -42,7 +42,7 @@ export default function BundleOfferCard({
   currentQuantity = 0,
   isSelected = false,
   onSelect,
-  availableSizes = [],
+  availableDimensions = [],
   availableColors = []
 }: BundleOfferCardProps) {
   const { locale, t } = useI18n();
@@ -182,7 +182,7 @@ export default function BundleOfferCard({
         <div onClick={(e) => e.stopPropagation()} className="mt-4">
           <BundleVariantSelector
             bundleQuantity={bundle.quantity}
-            availableSizes={availableSizes}
+            availableDimensions={availableDimensions}
             availableColors={availableColors}
             onVariantsChange={handleVariantsChange}
             locale={locale}

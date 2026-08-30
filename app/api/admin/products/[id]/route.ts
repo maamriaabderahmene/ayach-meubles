@@ -67,7 +67,7 @@ export async function PUT(
 
     const allowedFields = [
       "name", "slug", "description", "price", "compareAtPrice",
-      "categoryId", "images", "variants", "sizes", "colors",
+      "categoryId", "images", "variants", "dimensions", "colors",
       "tags", "details", "featured", "active", "topSelling",
       "in_stock", "stock_quantity",
     ];
