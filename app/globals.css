@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 /* ═══════════════════════════════════════════════════════
-   ZAK SHOP — Shopify Dawn-Inspired Design System
-   Clean, minimal, premium clothing store aesthetic
+   Layachi Bedding — Luxury Bedding Design System
+   Warm, elegant, premium bedding store aesthetic
    ═══════════════════════════════════════════════════════ */
 
 :root {
-  /* Shopify Dawn-style color tokens */
-  --color-background:       #FFFFFF;
-  --color-background-2:     #F6F6F6;
-  --color-foreground:       #121212;
-  --color-border:           #E8E8E1;
-  --color-border-subtle:    #F1F1F0;
-  --color-button:           #121212;
-  --color-button-text:      #FFFFFF;
-  --color-button-hover:     #303030;
-  --color-sale:             #DE3618;
-  --color-badge-new:        #121212;
-  --color-input-border:     #C9C9C9;
-  --color-shadow:           rgba(18,18,18,.08);
+  /* Layachi Bedding warm color tokens */
+  --color-background:       #FDFBF7;
+  --color-background-2:     #FAF7F0;
+  --color-foreground:       #0F0F0F;
+  --color-border:           #E2D9C8;
+  --color-border-subtle:    #F0EAE0;
+  --color-button:           #0F0F0F;
+  --color-button-text:      #FDFBF7;
+  --color-button-hover:     #2C2520;
+  --color-sale:             #C45235;
+  --color-badge-new:        #0F0F0F;
+  --color-input-border:     #C9BDA8;
+  --color-shadow:           rgba(15,15,15,.08);
 
-  /* ZAK SHOP brand accent */
-  --color-accent:           #C9A84C;
-  --color-accent-dark:      #A88A30;
+  /* Layachi Bedding brand accent — Rich Gold */
+  --color-accent:           #D4AF37;
+  --color-accent-dark:      #B8952D;
 
   /* Announcement bar */
-  --color-announcement-bg:  #121212;
-  --color-announcement-text:#FFFFFF;
+  --color-announcement-bg:  #0F0F0F;
+  --color-announcement-text:#FAF7F0;
 
   /* Typography */
   --font-display:  'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -55,7 +55,7 @@
   }
 
   body {
-    @apply bg-white text-zinc-900 font-sans;
+    @apply bg-white font-sans;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.65;
@@ -123,11 +123,11 @@
     @apply text-center mb-10;
   }
   .section-heading h2 {
-    @apply text-3xl md:text-4xl font-sans font-semibold text-zinc-900 mb-3;
+    @apply text-3xl md:text-4xl font-sans font-semibold text-stone-900 mb-3;
     letter-spacing: -0.02em;
   }
   .section-heading p {
-    @apply text-base text-zinc-500 max-w-xl mx-auto;
+    @apply text-base text-stone-500 max-w-xl mx-auto;
   }
 
   /* ── Shopify Dawn Buttons ── */
@@ -184,10 +184,12 @@
 
   /* ── Shopify Dawn Product Card ── */
   .product-card {
-    @apply relative bg-white cursor-pointer;
+    @apply relative cursor-pointer;
+    background-color: var(--color-background);
   }
   .product-card__media {
-    @apply relative overflow-hidden bg-[#F6F6F6];
+    @apply relative overflow-hidden;
+    background-color: var(--color-background-2);
     aspect-ratio: 3 / 4;
   }
   .product-card__media img {
@@ -200,14 +202,14 @@
     @apply pt-4 pb-2 px-0;
   }
   .product-card__title {
-    @apply text-sm font-sans font-medium text-zinc-900 leading-snug mb-1;
+    @apply text-sm font-sans font-medium text-stone-900 leading-snug mb-1;
     letter-spacing: 0.01em;
   }
   .product-card__price {
-    @apply text-sm text-zinc-900 font-medium;
+    @apply text-sm text-stone-900 font-medium;
   }
   .product-card__compare-price {
-    @apply text-sm text-zinc-400 line-through ml-2;
+    @apply text-sm text-stone-400 line-through ml-2;
   }
   .product-card__badge {
     @apply absolute top-3 left-3 z-10 px-2.5 py-1 text-[11px] font-sans font-semibold uppercase tracking-wider;
@@ -229,11 +231,12 @@
   .product-card__quick-add {
     @apply absolute bottom-0 left-0 right-0 z-10
            flex items-center justify-center
-           bg-white border-t border-[var(--color-border)]
-           text-sm font-sans font-medium text-zinc-900
+           border-t border-[var(--color-border)]
+           text-sm font-sans font-medium text-stone-900
            py-3 px-4
            transform translate-y-full
            transition-transform duration-300 ease-out;
+    background-color: var(--color-background);
   }
   .product-card:hover .product-card__quick-add {
     transform: translateY(0);
@@ -257,7 +260,7 @@
     @apply w-10 h-10 flex items-center justify-center;
   }
   .trust-item__text {
-    @apply text-xs font-sans font-medium text-zinc-600 uppercase tracking-wide;
+    @apply text-xs font-sans font-medium text-stone-600 uppercase tracking-wide;
   }
 
   /* ── Link hover underline (Shopify style) ── */
@@ -295,17 +298,23 @@
            flex items-end p-6;
   }
   .collection-card__title {
-    @apply text-white font-sans font-semibold text-lg md:text-xl leading-tight;
+    @apply font-sans font-semibold text-lg md:text-xl leading-tight;
+    color: #FAF7F0;
     letter-spacing: -0.01em;
   }
 
   /* ── Input (Shopify Dawn) ── */
   .input-field {
-    @apply w-full px-4 py-3 text-sm font-sans text-zinc-900
-           bg-white border border-[#C9C9C9]
-           placeholder-zinc-400
-           focus:outline-none focus:border-zinc-900 focus:ring-0
+    @apply w-full px-4 py-3 text-sm font-sans text-stone-900
+           border
+           placeholder-stone-400
+           focus:outline-none focus:ring-0
            transition-colors duration-200;
+    background-color: var(--color-background);
+    border-color: var(--color-input-border);
+  }
+  .input-field:focus {
+    border-color: var(--color-foreground);
   }
 
   /* ── Hero banner (Shopify Dawn) ── */
@@ -318,29 +327,31 @@
   }
   .hero-banner__heading {
     @apply text-4xl md:text-6xl lg:text-7xl font-sans font-bold
-           text-white leading-tight mb-6;
+           leading-tight mb-6;
+    color: #FAF7F0;
     letter-spacing: -0.03em;
   }
   .hero-banner__subheading {
-    @apply text-base md:text-lg text-white/85 font-sans font-light mb-10 max-w-xl mx-auto;
+    @apply text-base md:text-lg font-sans font-light mb-10 max-w-xl mx-auto;
+    color: rgba(250, 247, 240, 0.85);
   }
 
   /* ── Icon button ── */
   .icon-btn {
     @apply flex items-center justify-center w-10 h-10
-           text-zinc-700 hover:text-zinc-900
+           text-stone-700 hover:text-stone-900
            transition-colors duration-150 cursor-pointer;
   }
 
   /* Legacy compatibility class aliases */
   .hero-italia-gradient {
-    background: linear-gradient(135deg, #121212 0%, #1a1a1a 50%, #2a2a2a 100%);
+    background: linear-gradient(135deg, #0F0F0F 0%, #1A1613 50%, #2C2520 100%);
   }
   .italia-divider {
-    @apply w-12 h-0.5 bg-zinc-200;
+    @apply w-12 h-0.5 bg-stone-300;
   }
   .text-gradient-italia {
-    @apply text-zinc-900;
+    @apply text-stone-900;
   }
   .flag-accent::before {
     content: '';

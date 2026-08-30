@@ -14,71 +14,71 @@ module.exports = {
         heading: ['var(--font-italiana)', 'Georgia', 'serif'],
       },
       colors: {
-        // ZAK SHOP — Monochrome Clothing Brand Palette
+        // Layachi Bedding — Luxury Bedding Warm Palette
         'zak-black': {
-          DEFAULT: '#0A0A0A',
-          soft: '#1A1A1A',
-          muted: '#2C2C2C',
+          DEFAULT: '#0F0F0F',
+          soft: '#1A1613',
+          muted: '#2C2520',
         },
-        'zak-charcoal': '#2C2C2C',
+        'zak-charcoal': '#2C2520',
         'zak-white': {
-          DEFAULT: '#FFFFFF',
-          off: '#FAFAFA',
-          warm: '#F5F5F5',
+          DEFAULT: '#FDFBF7',
+          off: '#FAF7F0',
+          warm: '#F5EFE0',
         },
         'zak-gray': {
-          50:  '#FAFAFA',
-          100: '#F5F5F5',
-          200: '#E5E5E5',
-          300: '#D4D4D4',
-          400: '#A3A3A3',
-          500: '#737373',
-          600: '#525252',
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
+          50:  '#FAF7F0',
+          100: '#F5EFE0',
+          200: '#E8DCC8',
+          300: '#D4C9B4',
+          400: '#A89A82',
+          500: '#7A6F60',
+          600: '#5C5245',
+          700: '#403830',
+          800: '#261F19',
+          900: '#1A1613',
         },
-        // Keep legacy names mapped to new values for backward compat
-        'crema':  '#FAFAFA',
-        'grigio': '#1A1A1A',
-        'oro':    '#C9A84C',
+        // Legacy names mapped to Layachi values
+        'crema':  '#FAF7F0',
+        'grigio': '#1A1613',
+        'oro':    '#D4AF37',
 
-        // Legacy Italian color aliases → mapped to ZAK SHOP B&W palette
+        // Legacy Italian color aliases → mapped to Layachi Bedding palette
         // so that old class names (e.g. bg-italia-green) still compile
         'italia-green': {
-          DEFAULT: '#0A0A0A',
+          DEFAULT: '#0F0F0F',
           dark:    '#000000',
-          light:   '#1A1A1A',
+          light:   '#1A1613',
         },
         'italia-red': {
-          DEFAULT: '#2C2C2C',
-          dark:    '#1A1A1A',
-          light:   '#404040',
+          DEFAULT: '#2C2520',
+          dark:    '#1A1613',
+          light:   '#403830',
         },
-        'italia-white': '#FFFFFF',
+        'italia-white': '#FDFBF7',
 
-        // Shopify Dawn-style utility tokens
-        'shopify-black':  '#121212',
-        'shopify-bg':     '#F6F6F6',
-        'shopify-border': '#E8E8E1',
-        'shopify-text':   '#6B7280',
+        // Shopify Dawn-style utility tokens (warm-shifted)
+        'shopify-black':  '#0F0F0F',
+        'shopify-bg':     '#FAF7F0',
+        'shopify-border': '#E2D9C8',
+        'shopify-text':   '#7A6F60',
 
         // Semantic Aliases
         primary: {
-          DEFAULT: '#0A0A0A',
+          DEFAULT: '#0F0F0F',
           dark:    '#000000',
-          light:   '#1A1A1A',
+          light:   '#1A1613',
         },
         secondary: {
-          DEFAULT: '#FAFAFA',
-          dark:    '#F0F0F0',
+          DEFAULT: '#FAF7F0',
+          dark:    '#F5EFE0',
         },
         accent: {
-          DEFAULT: '#C9A84C',
-          light:   '#DFC06A',
-          dark:    '#A88A30',
+          DEFAULT: '#D4AF37',
+          light:   '#E5C65C',
+          dark:    '#B8952D',
         },
-        gold: '#C9A84C',
+        gold: '#D4AF37',
       },
       boxShadow: {
         'zak-sm':     '0 2px 4px rgba(0, 0, 0, 0.08)',

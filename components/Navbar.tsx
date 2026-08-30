@@ -43,7 +43,7 @@ export default function Navbar() {
       {/* Main header */}
       <header
         className={`sticky top-0 z-40 bg-white transition-shadow duration-300 ${
-          scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,.08)]" : "border-b border-[#E8E8E1]"
+          scrolled ? "shadow-[0_1px_12px_rgba(0,0,0,.08)]" : "border-b border-[#E2D9C8]"
         }`}
       >
         <div className="container">
@@ -51,9 +51,9 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="shrink-0 flex items-center gap-2.5 hover:opacity-75 transition-opacity">
-              <span className="block w-[3px] h-6 bg-[#C9A84C]" />
-              <span className="font-sans text-xl md:text-2xl font-bold tracking-tight text-zinc-900">
-                ZAK <span className="font-light text-zinc-400">SHOP</span>
+              <span className="block w-[3px] h-6 bg-[#D4AF37]" />
+              <span className="font-sans text-xl md:text-2xl font-bold tracking-tight text-stone-900">
+                ZAK <span className="font-light text-stone-400">SHOP</span>
               </span>
             </Link>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className="link-animated text-sm font-sans font-medium text-zinc-600 hover:text-zinc-900 transition-colors py-1"
+                  className="link-animated text-sm font-sans font-medium text-stone-600 hover:text-stone-900 transition-colors py-1"
                   onClick={() => trackCustomEvent("NavClick", { link: href })}
                 >
                   {label}
@@ -76,7 +76,7 @@ export default function Navbar() {
               <button
                 onClick={toggleLanguage}
                 className="hidden md:flex items-center gap-1.5 px-3 py-1.5 text-xs font-sans font-semibold
-                           text-zinc-500 hover:text-zinc-900 hover:border-zinc-300 border border-transparent
+                           text-stone-500 hover:text-stone-900 hover:border-stone-300 border border-transparent
                            transition-all rounded-sm"
               >
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,9 +118,9 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50 md:hidden">
           <div className="absolute inset-0 bg-black/30" onClick={() => setMobileMenuOpen(false)} />
           <div className={`absolute top-0 ${locale === "ar" ? "right-0" : "left-0"} h-full w-[280px] bg-white shadow-2xl flex flex-col`}>
-            <div className="flex items-center justify-between px-5 h-[60px] border-b border-[#E8E8E1]">
-              <span className="font-sans text-lg font-bold text-zinc-900">
-                ZAK <span className="font-light text-zinc-400">SHOP</span>
+            <div className="flex items-center justify-between px-5 h-[60px] border-b border-[#E2D9C8]">
+              <span className="font-sans text-lg font-bold text-stone-900">
+                ZAK <span className="font-light text-stone-400">SHOP</span>
               </span>
               <button className="icon-btn" onClick={() => setMobileMenuOpen(false)} aria-label="Fermer le menu">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,22 +135,22 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className="flex items-center justify-between px-5 py-4 text-sm font-sans font-medium
-                             text-zinc-800 hover:bg-[#F6F6F6] border-b border-[#F1F1F0]"
+                             text-stone-800 hover:bg-[#FAF7F0] border-b border-[#F0EAE0]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {label}
-                  <svg className="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
                 </Link>
               ))}
             </nav>
 
-            <div className="p-4 border-t border-[#E8E8E1]">
+            <div className="p-4 border-t border-[#E2D9C8]">
               <button
                 onClick={toggleLanguage}
                 className="w-full flex items-center justify-center gap-2 px-4 py-3 text-sm font-sans
-                           font-medium border border-zinc-300 text-zinc-700 hover:border-zinc-900 transition-colors"
+                           font-medium border border-stone-300 text-stone-700 hover:border-stone-900 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}

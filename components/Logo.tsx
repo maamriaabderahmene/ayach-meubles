@@ -14,8 +14,8 @@ export default function Logo({
   width = 140,
   height = 44,
 }: LogoProps) {
-  const fill      = variant === 'light' ? '#FFFFFF' : '#0A0A0A';
-  const accent    = '#C9A84C'; // subtle gold accent
+  const fill      = variant === 'light' ? '#FFFFFF' : '#0F0F0F';
+  const accent    = '#D4AF37'; // subtle gold accent
 
   return (
     <svg

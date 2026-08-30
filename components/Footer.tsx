@@ -44,9 +44,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#121212] text-white">
+    <footer className="bg-[#0F0F0F] text-white">
       {/* Gold top accent */}
-      <div className="h-[2px] bg-[#C9A84C]" />
+      <div className="h-[2px] bg-[#D4AF37]" />
 
       {/* Newsletter strip */}
       <div className="border-b border-white/10">
@@ -72,7 +72,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-[#C9A84C] hover:bg-[#A88A30] text-zinc-900 text-sm font-semibold
+                className="px-6 py-3 bg-[#D4AF37] hover:bg-[#B8952D] text-stone-900 text-sm font-semibold
                            transition-colors shrink-0"
               >
                 {locale === "ar" ? "اشتراك" : "S'abonner"}
@@ -89,7 +89,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="block w-[3px] h-5 bg-[#C9A84C]" />
+              <span className="block w-[3px] h-5 bg-[#D4AF37]" />
               <span className="font-sans text-xl font-bold text-white">
                 ZAK <span className="font-light text-white/40">SHOP</span>
               </span>
@@ -106,7 +106,7 @@ export default function Footer() {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/40 hover:text-[#C9A84C] transition-colors"
+                    className="text-white/40 hover:text-[#D4AF37] transition-colors"
                     onClick={() => trackCustomEvent("SocialClick", { platform: s.platform })}
                   >
                     {socialIcon(s.platform)}
@@ -164,13 +164,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-white/50">
               <li className="flex items-start gap-2">
-                <svg className="w-4 h-4 mt-0.5 shrink-0 text-[#C9A84C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mt-0.5 shrink-0 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>
                 <span>Algérie — التوصيل لكل الولايات</span>
               </li>
               <li className="flex items-start gap-2">
-                <svg className="w-4 h-4 mt-0.5 shrink-0 text-[#C9A84C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 mt-0.5 shrink-0 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
                 <span>contact@zak-shop-officiel.com</span>

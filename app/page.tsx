@@ -25,25 +25,25 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════════
           HERO — Full-width banner (Shopify Dawn style)
           ══════════════════════════════════════════════ */}
-      <section className="hero-banner bg-[#121212]">
+      <section className="hero-banner bg-[#0F0F0F]">
         {/* Subtle gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1a1a1a] to-[#2a2520] opacity-95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1A1613] to-[#2C2520] opacity-95" />
 
         {/* Decorative soft glow */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#C9A84C]/5 blur-[160px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#D4AF37]/5 blur-[160px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-white/3 blur-[120px] pointer-events-none" />
 
         {/* Gold top rule */}
-        <div className="absolute top-0 inset-x-0 h-px bg-[#C9A84C]/40" />
+        <div className="absolute top-0 inset-x-0 h-px bg-[#D4AF37]/40" />
 
         <div className="hero-banner__content">
           {/* Eyebrow */}
           <p className="inline-flex items-center gap-3 mb-6">
-            <span className="h-px w-8 bg-[#C9A84C]/70" />
-            <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.32em] text-[#C9A84C]/90">
+            <span className="h-px w-8 bg-[#D4AF37]/70" />
+            <span className="text-[11px] font-sans font-semibold uppercase tracking-[0.32em] text-[#D4AF37]/90">
               {locale === "ar" ? "أزياء فاخرة — الجزائر" : "Mode Premium — Algérie"}
             </span>
-            <span className="h-px w-8 bg-[#C9A84C]/70" />
+            <span className="h-px w-8 bg-[#D4AF37]/70" />
           </p>
 
           {/* Main headline */}
@@ -87,7 +87,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════════
           TRUST BAR
           ══════════════════════════════════════════════ */}
-      <section className="bg-[#F6F6F6] border-y border-[#E8E8E1]">
+      <section className="bg-[#FAF7F0] border-y border-[#E2D9C8]">
         <div className="container py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -113,12 +113,12 @@ export default function HomePage() {
               },
             ].map(({ icon, ar, fr }, i) => (
               <div key={i} className="trust-item py-2">
-                <div className="trust-item__icon text-[#C9A84C]">
+                <div className="trust-item__icon text-[#D4AF37]">
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={icon} />
                   </svg>
                 </div>
-                <p className="trust-item__text text-zinc-600">
+                <p className="trust-item__text text-stone-600">
                   {locale === "ar" ? ar : fr}
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading">
             <h2>{locale === "ar" ? "تسوق حسب الفئة" : "Parcourez nos collections"}</h2>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-stone-400 text-sm">
               {locale === "ar" ? "اكتشف تشكيلتنا للرجال والنساء" : "Homme, Femme et accessoires — style garanti"}
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
             {/* Collection tile 1 */}
             <Link href="/products?category=homme" className="collection-card group h-[380px] block">
-              <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900" />
+              <div className="absolute inset-0 bg-gradient-to-br from-stone-800 to-stone-900" />
               <div className="collection-card__overlay">
                 <div>
                   <p className="text-[10px] font-sans text-white/60 uppercase tracking-widest mb-1">
@@ -151,7 +151,7 @@ export default function HomePage() {
                   <h3 className="collection-card__title">
                     {locale === "ar" ? "تشكيلة الرجال" : "Collection Homme"}
                   </h3>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#C9A84C] font-semibold">
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#D4AF37] font-semibold">
                     {locale === "ar" ? "تسوق الآن" : "Découvrir"}
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -163,7 +163,7 @@ export default function HomePage() {
 
             {/* Collection tile 2 (tall) */}
             <Link href="/products?category=femme" className="collection-card group h-[380px] sm:row-span-1 block">
-              <div className="absolute inset-0 bg-gradient-to-br from-zinc-700 to-zinc-900" />
+              <div className="absolute inset-0 bg-gradient-to-br from-stone-700 to-stone-900" />
               <div className="collection-card__overlay">
                 <div>
                   <p className="text-[10px] font-sans text-white/60 uppercase tracking-widest mb-1">
@@ -172,7 +172,7 @@ export default function HomePage() {
                   <h3 className="collection-card__title">
                     {locale === "ar" ? "تشكيلة النساء" : "Collection Femme"}
                   </h3>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#C9A84C] font-semibold">
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#D4AF37] font-semibold">
                     {locale === "ar" ? "تسوق الآن" : "Découvrir"}
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -184,7 +184,7 @@ export default function HomePage() {
 
             {/* Collection tile 3 */}
             <Link href="/products?category=accessoires" className="collection-card group h-[380px] block">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#2a2520] to-zinc-900" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2C2520] to-stone-900" />
               <div className="collection-card__overlay">
                 <div>
                   <p className="text-[10px] font-sans text-white/60 uppercase tracking-widest mb-1">
@@ -193,7 +193,7 @@ export default function HomePage() {
                   <h3 className="collection-card__title">
                     {locale === "ar" ? "الإكسسوارات" : "Accessoires & Lifestyle"}
                   </h3>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#C9A84C] font-semibold">
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-sans text-[#D4AF37] font-semibold">
                     {locale === "ar" ? "تسوق الآن" : "Découvrir"}
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -209,11 +209,11 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════════
           FEATURED PRODUCTS
           ══════════════════════════════════════════════ */}
-      <section className="section bg-[#F6F6F6] scroll-animate">
+      <section className="section bg-[#FAF7F0] scroll-animate">
         <div className="container">
           <div className="section-heading">
             <h2>{t("home.featuredTitle")}</h2>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-stone-400 text-sm">
               {locale === "ar" ? "أبرز منتجاتنا المختارة خصيصاً لك" : "Notre sélection de pièces incontournables"}
             </p>
           </div>
@@ -252,23 +252,23 @@ export default function HomePage() {
                 { value: "58", label: locale === "ar" ? "ولاية تغطيها" : "Wilayas desservies" },
               ].map(({ value, label }) => (
                 <div key={label}
-                  className="bg-[#F6F6F6] border border-[#E8E8E1] p-6 flex flex-col gap-1 group hover:border-zinc-900 transition-colors"
+                  className="bg-[#FAF7F0] border border-[#E2D9C8] p-6 flex flex-col gap-1 group hover:border-stone-900 transition-colors"
                 >
-                  <span className="font-sans text-2xl md:text-3xl font-bold text-zinc-900 tracking-tight">{value}</span>
-                  <span className="text-xs font-sans font-medium text-zinc-400 uppercase tracking-wide">{label}</span>
+                  <span className="font-sans text-2xl md:text-3xl font-bold text-stone-900 tracking-tight">{value}</span>
+                  <span className="text-xs font-sans font-medium text-stone-400 uppercase tracking-wide">{label}</span>
                 </div>
               ))}
             </div>
 
             {/* Text (right) */}
             <div>
-              <p className="text-[11px] font-sans font-semibold uppercase tracking-[0.22em] text-[#C9A84C] mb-4">
+              <p className="text-[11px] font-sans font-semibold uppercase tracking-[0.22em] text-[#D4AF37] mb-4">
                 {locale === "ar" ? "قصتنا" : "Notre Histoire"}
               </p>
-              <h2 className="text-2xl md:text-3xl font-sans font-semibold text-zinc-900 mb-5 leading-snug">
+              <h2 className="text-2xl md:text-3xl font-sans font-semibold text-stone-900 mb-5 leading-snug">
                 {t("home.aboutTitle")}
               </h2>
-              <p className="text-zinc-500 text-sm leading-relaxed mb-8">
+              <p className="text-stone-500 text-sm leading-relaxed mb-8">
                 {t("home.aboutDesc")}
               </p>
               <Link
@@ -288,20 +288,20 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════════
           CTA BANNER — Shopify "Image banner" section
           ══════════════════════════════════════════════ */}
-      <section className="relative py-24 md:py-32 bg-[#121212] overflow-hidden scroll-animate">
-        <div className="absolute inset-0 bg-gradient-to-br from-black to-[#1e1e1e]" />
-        <div className="absolute top-0 inset-x-0 h-px bg-[#C9A84C]/30" />
-        <div className="absolute bottom-0 inset-x-0 h-px bg-[#C9A84C]/30" />
-        <div className="absolute right-0 top-0 w-[500px] h-[500px] rounded-full bg-[#C9A84C]/5 blur-[120px] pointer-events-none" />
+      <section className="relative py-24 md:py-32 bg-[#0F0F0F] overflow-hidden scroll-animate">
+        <div className="absolute inset-0 bg-gradient-to-br from-black to-[#1A1613]" />
+        <div className="absolute top-0 inset-x-0 h-px bg-[#D4AF37]/30" />
+        <div className="absolute bottom-0 inset-x-0 h-px bg-[#D4AF37]/30" />
+        <div className="absolute right-0 top-0 w-[500px] h-[500px] rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none" />
 
         <div className="container relative z-10 text-center max-w-2xl mx-auto">
-          <p className="text-[11px] font-sans font-semibold uppercase tracking-[0.28em] text-[#C9A84C] mb-5">
+          <p className="text-[11px] font-sans font-semibold uppercase tracking-[0.28em] text-[#D4AF37] mb-5">
             {locale === "ar" ? "وصل جديد" : "Nouvelles Arrivées"}
           </p>
           <h2 className="text-3xl md:text-5xl font-sans font-bold text-white mb-6 leading-tight tracking-tight">
             {t("home.ctaTitle") || "ZAK SHOP"}
           </h2>
-          <p className="text-zinc-400 text-sm md:text-base mb-10 leading-relaxed">
+          <p className="text-stone-400 text-sm md:text-base mb-10 leading-relaxed">
             {t("home.ctaDesc")}
           </p>
           <div className={`flex flex-wrap items-center justify-center gap-4 ${locale === "ar" ? "flex-row-reverse" : ""}`}>
