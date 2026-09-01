@@ -1,7 +1,7 @@
 // Admin dashboard internationalization (French / English)
 "use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from "react";
 
 type Locale = "fr" | "en";
 
@@ -335,12 +335,16 @@ const AdminI18nContext = createContext<AdminI18nContextType>({
 });
 
 export function AdminI18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>(() => {
-    if (typeof window !== "undefined") {
-      return (localStorage.getItem("admin_locale") as Locale) || "fr";
+  const [locale, setLocale] = useState<Locale>("fr");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("admin_locale") as Locale;
+    if (saved) {
+      setLocale(saved);
     }
-    return "fr";
-  });
+    setMounted(true);
+  }, []);
 
   const handleSetLocale = useCallback((newLocale: Locale) => {
     setLocale(newLocale);
@@ -360,6 +364,10 @@ export function AdminI18nProvider({ children }: { children: ReactNode }) {
     },
     [locale]
   );
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <AdminI18nContext.Provider value={{ locale, setLocale: handleSetLocale, t }}>
