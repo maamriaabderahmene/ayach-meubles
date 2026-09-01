@@ -103,7 +103,7 @@ export async function POST(request: NextRequest) {
         unitPrice: product.price,
         sku: item.sku,
         qty: item.qty,
-        selectedDimension: item.selectedSize || item.selectedDimension,
+selectedDimension: item.selectedDimension,
         selectedColor: item.selectedColor,
         total: itemTotal,
       });
@@ -235,7 +235,7 @@ export async function POST(request: NextRequest) {
       unitPrice: item.unitPrice,
       sku: item.sku,
       quantity: item.qty,
-      selectedDimension: item.selectedSize || item.selectedDimension,
+      selectedDimension: item.selectedDimension,
       selectedColor: item.selectedColor,
       total: item.total,
       createdAt: now,
